@@ -17,6 +17,9 @@ importers:
 
   apps/st-web:
     dependencies:
+      '@hey-api/client-fetch':
+        specifier: ^0.1.2
+        version: 0.1.2
       '@radix-ui/react-accordion':
         specifier: ^1.1.2
         version: 1.1.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522)
@@ -107,6 +110,9 @@ importers:
       '@tanstack/react-query-devtools':
         specifier: ^5.37.1
         version: 5.37.1(@tanstack/react-query@5.37.1(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522)
+      '@tanstack/react-query-next-experimental':
+        specifier: ^5.37.1
+        version: 5.37.1(@tanstack/react-query@5.37.1(react@19.0.0-rc-f994737d14-20240522))(next@15.0.0-rc.0(@babel/core@7.24.5)(react-dom@19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522)
       '@tanstack/react-table':
         specifier: ^8.17.3
         version: 8.17.3(react-dom@19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522)
@@ -813,6 +819,9 @@ packages:
 
   '@floating-ui/utils@0.2.2':
     resolution: {integrity: sha512-J4yDIIthosAsRZ5CPYP/jQvUAQtlZTTD/4suA08/FEnlxqW3sKS9iAhgsa9VYLZ6vDHn/ixJgIqRQPotoBjxIw==}
+
+  '@hey-api/client-fetch@0.1.2':
+    resolution: {integrity: sha512-ZJdnKSEyzoduA1BsfIA/0fFKkDEag23TOtPkrm+0rrUDb9t4EjtsIf08zkUsPudK+ME1QNFO0xOYH3uP+RjbKw==}
 
   '@hey-api/openapi-ts@0.46.1':
     resolution: {integrity: sha512-EjVHcD3m+/rwSQNGhnFb3V+Km+nJHfyE+NMx/RpVZ8FEqZYlkDr45uMThX+xcQ9GH/cNYbc/QdoHa4hCX9ONeg==}
@@ -1683,6 +1692,13 @@ packages:
     resolution: {integrity: sha512-fWL3rV/avL9HsHt3RVYxuLCqSHghBwSGPIUMDZ9hfg9PDjQaeI9d8kJj6yLoCBWUhTue5/rQbISvFtr+yxyYyA==}
     peerDependencies:
       '@tanstack/react-query': ^5.37.1
+      react: ^18.0.0
+
+  '@tanstack/react-query-next-experimental@5.37.1':
+    resolution: {integrity: sha512-Z4ksCK2Ta4UhQ2fwowlOT3P94pcfRLIY+cHHsp92y2di9Bft6q6yODoDVOSvVho1tqQjlJemljegZaUZUvtKVA==}
+    peerDependencies:
+      '@tanstack/react-query': ^5.37.1
+      next: ^13 || ^14
       react: ^18.0.0
 
   '@tanstack/react-query@5.37.1':
@@ -4202,6 +4218,8 @@ snapshots:
 
   '@floating-ui/utils@0.2.2': {}
 
+  '@hey-api/client-fetch@0.1.2': {}
+
   '@hey-api/openapi-ts@0.46.1(typescript@5.4.5)':
     dependencies:
       '@apidevtools/json-schema-ref-parser': 11.6.2
@@ -5120,6 +5138,12 @@ snapshots:
     dependencies:
       '@tanstack/query-devtools': 5.37.1
       '@tanstack/react-query': 5.37.1(react@19.0.0-rc-f994737d14-20240522)
+      react: 19.0.0-rc-f994737d14-20240522
+
+  '@tanstack/react-query-next-experimental@5.37.1(@tanstack/react-query@5.37.1(react@19.0.0-rc-f994737d14-20240522))(next@15.0.0-rc.0(@babel/core@7.24.5)(react-dom@19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522)':
+    dependencies:
+      '@tanstack/react-query': 5.37.1(react@19.0.0-rc-f994737d14-20240522)
+      next: 15.0.0-rc.0(@babel/core@7.24.5)(react-dom@19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522)
       react: 19.0.0-rc-f994737d14-20240522
 
   '@tanstack/react-query@5.37.1(react@19.0.0-rc-f994737d14-20240522)':

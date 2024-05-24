@@ -10,6 +10,7 @@
     "check": "tsc --watch"
   },
   "dependencies": {
+    "@hey-api/client-fetch": "^0.1.2",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
@@ -40,6 +41,7 @@
     "@tanstack/query-core": "^5.36.1",
     "@tanstack/react-query": "^5.37.1",
     "@tanstack/react-query-devtools": "^5.37.1",
+    "@tanstack/react-query-next-experimental": "^5.37.1",
     "@tanstack/react-table": "^8.17.3",
     "better-sqlite3": "^10.0.0",
     "class-variance-authority": "^0.7.0",

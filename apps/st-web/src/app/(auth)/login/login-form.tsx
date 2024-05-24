@@ -54,8 +54,11 @@ export function LoginForm() {
           </div>
 
           <div className="grid gap-2">
-            <div className="flex items-center">
+            <div className="flex items-center justify-between">
               <Label htmlFor={zo.fields.password()}>Password</Label>
+              {zo.errors.password((e) => (
+                <span>{e.message}</span>
+              ))}
             </div>
             <Input
               type={'password'}
@@ -63,9 +66,6 @@ export function LoginForm() {
               placeholder={'Password'}
               required
             />
-            {zo.errors.password((e) => (
-              <span>{e.message}</span>
-            ))}
           </div>
 
           <Button type="submit" className="w-full" disabled={disabled}>
