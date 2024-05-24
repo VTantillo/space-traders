@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  transpilePackages: ['db', 'st-ts-client'],
+}
 
-export default nextConfig;
+export default nextConfig
