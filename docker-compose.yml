@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  pg-db:
+    container_name: fairmate-db
+    image: postgres:bullseye
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: fairmate
+    volumes:
+      - fairmate-db:/var/lib/postgresql/data
+    networks:
+      - fairmate-network
+
+volumes:
+  fairmate-db:
+
+networks:
+  fairmate-network:
+    name: fairmate-network
