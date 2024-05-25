@@ -41,3 +41,21 @@ export const dbSession = sqliteTable('session', {
 })
 export type Session = typeof dbSession.$inferSelect
 export type NewSession = typeof dbSession.$inferInsert
+
+export const dbUserAgent = sqliteTable('user_agent', {
+  id: text('id')
+    .$defaultFn(() => ulid())
+    .primaryKey()
+    .notNull(),
+  userId: text('user_id')
+    .references(() => dbUser.id, {
+      onDelete: 'cascade',
+    })
+    .notNull(),
+  token: text('token').notNull(),
+  accountId: text('account_id').notNull(),
+  symbol: text('symbol').notNull(),
+  startingFaction: text('starting_faction').notNull(),
+})
+export type UserAgent = typeof dbUserAgent.$inferSelect
+export type NewUserAgent = typeof dbUserAgent.$inferInsert

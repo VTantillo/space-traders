@@ -27,6 +27,7 @@ export function RegisterAgentForm() {
   const zo = useZorm('register-agent', RegisterAgentInputSchema, {
     onValidSubmit: async (e) => {
       e.preventDefault()
+      // TODO: Handle API error if the agent couldn't be created
       const agent = await registerAgentAction(e.data)
       console.log('returned agent', agent)
     },
