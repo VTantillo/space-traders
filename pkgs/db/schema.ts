@@ -53,6 +53,7 @@ export const dbUserAgent = sqliteTable('user_agent', {
     })
     .notNull(),
   token: text('token').notNull(),
+  isActive: integer('is_active', { mode: 'boolean' }).notNull().default(false),
   accountId: text('account_id').notNull(),
   symbol: text('symbol').notNull(),
   startingFaction: text('starting_faction').notNull(),

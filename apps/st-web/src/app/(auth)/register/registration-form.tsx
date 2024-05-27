@@ -10,8 +10,17 @@ import {
 } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 import { registerAction } from '@/lib/auth/auth.actions'
 import { RegistrationFormSchema } from '@/lib/auth/auth.types'
+import { FactionSymbolSchema } from '@/lib/faction/faction.types'
+import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { useState } from 'react'
 import { useZorm } from 'react-zorm'
@@ -41,11 +50,12 @@ export function RegistrationForm() {
   return (
     <Card className="mx-auto max-w-sm">
       <CardHeader>
-        <CardTitle className="text-xl">Sign Up</CardTitle>
+        <CardTitle>Sign Up</CardTitle>
         <CardDescription>
           Enter your information to create an account
         </CardDescription>
       </CardHeader>
+
       <CardContent>
         <form ref={zo.ref} className="grid gap-4">
           <div className="grid gap-2">
@@ -84,6 +94,56 @@ export function RegistrationForm() {
             {zo.errors.confirmPassword((e) => (
               <span>{e.message}</span>
             ))}
+          </div>
+
+          <div className={cn('grid gap-6')}>
+            <div>
+              <CardTitle className="text-xl">Register an Agent</CardTitle>
+              <CardDescription>
+                Choose a name and faction for your new agent
+              </CardDescription>
+            </div>
+
+            <div className={cn('grid gap-2')}>
+              <div className="grid gap-2">
+                <div className={cn('flex items-center justify-between')}>
+                  <Label htmlFor={zo.fields.symbol()}>Agent Symbol</Label>
+                  {zo.errors.symbol((e) => (
+                    <span className={cn('text-sm text-destructive')}>
+                      {e.message}
+                    </span>
+                  ))}
+                </div>
+                <Input
+                  type={'text'}
+                  name={zo.fields.symbol()}
+                  placeholder={'Agent Symbol'}
+                />
+              </div>
+
+              <div className="grid gap-2">
+                <div className={cn('flex items-center justify-between')}>
+                  <Label htmlFor={zo.fields.symbol()}>Faciton</Label>
+                  {zo.errors.faction((e) => (
+                    <span className={cn('text-sm text-destructive')}>
+                      {e.message}
+                    </span>
+                  ))}
+                </div>
+                <Select name={zo.fields.faction()}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select a faction" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {FactionSymbolSchema.options.map((value) => (
+                      <SelectItem key={value} value={value}>
+                        {value}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
           </div>
 
           <Button type="submit" className="w-full">

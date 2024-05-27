@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { FactionSymbolSchema } from '../faction/faction.types'
 
 export const RegistrationFormSchema = z
   .object({
@@ -6,6 +7,8 @@ export const RegistrationFormSchema = z
     password: z.string().min(1, 'Password is required'),
     // .min(8, 'Password must have more than 8 characters'),
     confirmPassword: z.string().min(1, 'Password confirmation is required'),
+    faction: FactionSymbolSchema,
+    symbol: z.string().min(1, 'Must have a name'),
   })
   .refine((data) => data.password === data.confirmPassword, {
     message: "Passwords don't match",

@@ -9,6 +9,7 @@ import { RegisterAgentInput } from './agent.types'
 export async function registerAgentAction(input: RegisterAgentInput) {
   try {
     const user = await getActiveSessionUser()
+
     const res = await register({ requestBody: input })
 
     await db.transaction(async (tx) => {
