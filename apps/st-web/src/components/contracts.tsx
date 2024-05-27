@@ -42,6 +42,8 @@ export function Contracts() {
   const contracts = query.data.data
   const meta = query.data.meta
 
+  console.log('contracts', contracts)
+
   return (
     <Card>
       <CardHeader>
@@ -62,6 +64,7 @@ export function Contracts() {
               <TableHead>Delivery Deadline</TableHead>
               <TableHead>Payment on accept</TableHead>
               <TableHead>Payment on fulfilment</TableHead>
+              <TableHead>Destinations</TableHead>
               <TableHead>
                 <span className="sr-only">Actions</span>
               </TableHead>
@@ -87,6 +90,9 @@ export function Contracts() {
                 </TableCell>
                 <TableCell>{c.terms.payment.onAccepted}</TableCell>
                 <TableCell>{c.terms.payment.onFulfilled}</TableCell>
+                <TableCell>
+                  {c.terms.deliver?.map((i) => i.destinationSymbol)}
+                </TableCell>
                 <TableCell>
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
