@@ -15,7 +15,7 @@ export async function registerAgentAction(input: RegisterAgentInput) {
     await db.transaction(async (tx) => {
       const newAgent = {
         token: res.data.token,
-        userId: user.id,
+        userId: user.user.id,
         accountId: res.data.agent.accountId!,
         symbol: res.data.agent.symbol,
         startingFaction: res.data.agent.startingFaction,

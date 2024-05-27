@@ -1,15 +1,18 @@
-import { Waypoint } from '@/components/waypoint-display'
+import { ActiveAgent } from '@/components/active-agent'
+import { Contracts } from '@/components/contracts'
+import { Waypoint } from '@/components/waypoint'
 import { getActiveSessionUser } from '@/lib/auth/auth.repo'
 import { getQueryClient } from '@/lib/client'
 import { meQueries, waypointQueries } from '@/lib/queries'
 import { cn } from '@/lib/utils'
 import { dehydrate, HydrationBoundary } from '@tanstack/react-query'
+import { getMyAgent } from 'st-ts-client'
 
 export default async function Dashboard() {
   const queryClient = getQueryClient()
   const me = await getActiveSessionUser()
 
-  const agent = await queryClient.fetchQuery(meQueries.agent())
+  const agent = await getMyAgent()
   const splitUp = agent.data.headquarters.split('-')
 
   await queryClient.prefetchQuery(
@@ -19,21 +22,17 @@ export default async function Dashboard() {
     }),
   )
 
+  await queryClient.prefetchQuery(meQueries.contracts({}))
+
   return (
     <main className={cn('container space-y-2')}>
       <h1 className={cn('text-3xl')}>Hello, {me.user.username}</h1>
-      <div>
-        <p>Active Agent</p>
-        <p>
-          [{agent.data.startingFaction}] {agent.data.symbol}
-        </p>
-        <p>HQ: {agent.data.headquarters}</p>
-        <p>{agent.data.credits} Credits</p>
-        <p>{agent.data.shipCount} Ships</p>
-      </div>
+
+      <ActiveAgent agent={agent.data} />
 
       <HydrationBoundary state={dehydrate(queryClient)}>
         <Waypoint symbol={agent.data.headquarters} />
+        <Contracts />
       </HydrationBoundary>
     </main>
   )
