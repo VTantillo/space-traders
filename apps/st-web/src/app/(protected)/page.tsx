@@ -1,6 +1,5 @@
-import { ActiveAgent } from '@/components/active-agent'
 import { Contracts } from '@/components/contracts'
-import { MyShips } from '@/components/my-ships'
+import { Fleet } from '@/components/fleet'
 import { Shipyard } from '@/components/shipyard'
 import { SystemWaypoints } from '@/components/system-waypoints'
 import { getActiveSessionUser } from '@/lib/auth/auth.repo'
@@ -31,10 +30,9 @@ export default async function Dashboard() {
 
   return (
     <main className={cn('container space-y-2')}>
-      <h1 className={cn('text-3xl')}>Hello, {me.user.username}</h1>
+      <h1 className={cn('text-3xl')}>Hello, {agent.data.symbol}</h1>
 
-      <ActiveAgent agent={agent.data} />
-      <MyShips />
+      <Fleet />
       <SystemWaypoints symbol={systemSymbol} />
 
       <Shipyard symbol="X1-SD16-H55" ships={shipyard.data.ships ?? []} />

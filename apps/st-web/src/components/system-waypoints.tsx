@@ -38,7 +38,7 @@ export async function SystemWaypoints({ symbol }: Props) {
     page,
     limit,
     systemSymbol: symbol,
-    traits: 'SHIPYARD',
+    type: 'ENGINEERED_ASTEROID',
   })
 
   const waypoints = req.data
