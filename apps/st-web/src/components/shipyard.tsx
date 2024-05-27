@@ -31,9 +31,7 @@ type Props = {
   symbol: string
   ships: ShipyardShip[]
 }
-export async function Shipyard({ symbol, ships }: Props) {
-  console.log(ships)
-
+export function Shipyard({ symbol, ships }: Props) {
   return (
     <Card>
       <CardHeader>

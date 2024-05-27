@@ -10,8 +10,6 @@ export async function acceptContractAction(contractId: string) {
   try {
     const res = await acceptContract({ contractId })
 
-    console.log(res)
-
     revalidatePath('/')
     queryClient.invalidateQueries({
       queryKey: meQueries.allContracts(),
