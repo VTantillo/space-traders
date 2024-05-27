@@ -1,5 +1,3 @@
-'use client'
-
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -24,44 +22,45 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-import { acceptContractAction } from '@/lib/contract/contract.actions'
-import { meQueries } from '@/lib/queries'
-import { useQuery } from '@tanstack/react-query'
-import { CircleCheckBig, CircleSlash, MoreHorizontal } from 'lucide-react'
-import { z } from 'zod'
+import { cn } from '@/lib/utils'
+import { CircleCheckBig, MoreHorizontal } from 'lucide-react'
+import { getSystemWaypoints } from 'st-ts-client'
+import { Badge } from './ui/badge'
 
-const dateStringSchema = z.coerce.date().transform((d) => d.toDateString())
+type Props = {
+  symbol: string
+}
+export async function SystemWaypoints({ symbol }: Props) {
+  const page = 1
+  const limit = 20
 
-export function Contracts() {
-  const query = useQuery(meQueries.contracts({}))
+  const req = await getSystemWaypoints({
+    page,
+    limit,
+    systemSymbol: symbol,
+    traits: 'SHIPYARD',
+  })
 
-  if (query.status !== 'success' && !query.data) {
-    return null
-  }
-
-  const contracts = query.data.data
-  const meta = query.data.meta
+  const waypoints = req.data
+  const meta = req.meta
 
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Contracts</CardTitle>
-        <CardDescription>
-          Contracts currently available to your agent
-        </CardDescription>
+        <CardTitle>System Waypoints</CardTitle>
+        <CardDescription>Waypoints in the current system</CardDescription>
       </CardHeader>
       <CardContent>
         <Table>
           <TableHeader>
             <TableRow>
+              <TableHead>Symbol</TableHead>
+              <TableHead>Coords</TableHead>
               <TableHead>Type</TableHead>
+              <TableHead>Traits</TableHead>
               <TableHead>Faction</TableHead>
-              <TableHead>Accepted</TableHead>
-              <TableHead>Fulfilled</TableHead>
-              <TableHead>Accept Deadline</TableHead>
-              <TableHead>Delivery Deadline</TableHead>
-              <TableHead>Payment on accept</TableHead>
-              <TableHead>Payment on fulfilment</TableHead>
+              <TableHead>Under Construction</TableHead>
+              <TableHead>Orbitals</TableHead>
               <TableHead>
                 <span className="sr-only">Actions</span>
               </TableHead>
@@ -69,24 +68,29 @@ export function Contracts() {
           </TableHeader>
 
           <TableBody>
-            {contracts.map((c) => (
-              <TableRow key={c.id}>
-                <TableCell>{c.type}</TableCell>
-                <TableCell>{c.factionSymbol}</TableCell>
+            {waypoints.map((w) => (
+              <TableRow key={w.symbol}>
+                <TableCell>{w.symbol}</TableCell>
                 <TableCell>
-                  {c.accepted ? <CircleCheckBig /> : <CircleSlash />}
+                  ({w.x}, {w.y})
+                </TableCell>
+                <TableCell>{w.type}</TableCell>
+                <TableCell>
+                  <div className={cn('flex flex-wrap gap-1')}>
+                    {w.traits.map((t) => (
+                      <Badge key={t.symbol}>{t.name}</Badge>
+                    ))}
+                  </div>
+                </TableCell>
+                <TableCell>{w.faction?.symbol}</TableCell>
+                <TableCell>
+                  {w.isUnderConstruction && <CircleCheckBig />}
                 </TableCell>
                 <TableCell>
-                  {c.fulfilled ? <CircleCheckBig /> : <CircleSlash />}
+                  {w.orbitals.map((o) => (
+                    <Badge key={o.symbol}>{o.symbol}</Badge>
+                  ))}
                 </TableCell>
-                <TableCell>
-                  {dateStringSchema.parse(c.deadlineToAccept)}
-                </TableCell>
-                <TableCell>
-                  {dateStringSchema.parse(c.terms.deadline)}
-                </TableCell>
-                <TableCell>{c.terms.payment.onAccepted}</TableCell>
-                <TableCell>{c.terms.payment.onFulfilled}</TableCell>
                 <TableCell>
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
@@ -97,11 +101,7 @@ export function Contracts() {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
                       <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                      <DropdownMenuItem
-                        onClick={() => acceptContractAction(c.id)}
-                      >
-                        Accept
-                      </DropdownMenuItem>
+                      <DropdownMenuItem>Accept</DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
                 </TableCell>
@@ -110,10 +110,12 @@ export function Contracts() {
           </TableBody>
         </Table>
       </CardContent>
+
       <CardFooter>
         <div className="text-xs text-muted-foreground">
-          Showing <strong>{contracts.length}</strong> of{' '}
-          <strong>{meta.total}</strong> contracts
+          Showing page <strong>{page}</strong> of{' '}
+          <strong>{Math.ceil(meta.total / limit)}</strong> (
+          <strong>{meta.total}</strong> total waypoints)
         </div>
       </CardFooter>
     </Card>
