@@ -1,0 +1,3703 @@
+[
+  {
+    "symbol": "X1-YR53",
+    "sectorSymbol": "X1",
+    "type": "YOUNG_STAR",
+    "x": -554,
+    "y": -3288,
+    "waypoints": [
+      {
+        "symbol": "X1-YR53-CB1A",
+        "type": "PLANET",
+        "x": 8,
+        "y": -12,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YR53-B12A",
+        "type": "ASTEROID",
+        "x": -775,
+        "y": 31,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YR53-CF5X",
+        "type": "ASTEROID",
+        "x": -477,
+        "y": -611,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YR53-ZE6Z",
+        "type": "ASTEROID",
+        "x": 554,
+        "y": -559,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YR53-E10X",
+        "type": "ASTEROID",
+        "x": -485,
+        "y": 590,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YR53-B13E",
+        "type": "ASTEROID",
+        "x": 183,
+        "y": -765,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YR53-DD3C",
+        "type": "GAS_GIANT",
+        "x": -62,
+        "y": 5,
+        "orbitals": [
+          {
+            "symbol": "X1-YR53-DC4C"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-YR53-FC9C",
+        "type": "ASTEROID",
+        "x": -85,
+        "y": 750,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YR53-B11C",
+        "type": "ASTEROID",
+        "x": -494,
+        "y": 591,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YR53-DB7X",
+        "type": "ASTEROID",
+        "x": 739,
+        "y": 184,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YR53-ZF2C",
+        "type": "GAS_GIANT",
+        "x": 8,
+        "y": 37,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YR53-FD8E",
+        "type": "ASTEROID",
+        "x": 464,
+        "y": 620,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YR53-DC4C",
+        "type": "MOON",
+        "x": -62,
+        "y": 5,
+        "orbitals": [],
+        "orbits": "X1-YR53-DD3C"
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-T70",
+    "sectorSymbol": "X1",
+    "type": "ORANGE_STAR",
+    "x": 98,
+    "y": 577,
+    "waypoints": [
+      {
+        "symbol": "X1-T70-ZE2B",
+        "type": "ASTEROID",
+        "x": -261,
+        "y": 216,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-ZB1B",
+        "type": "ASTEROID",
+        "x": -152,
+        "y": 327,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-XC6F",
+        "type": "ASTEROID",
+        "x": -348,
+        "y": -152,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-CZ9D",
+        "type": "ASTEROID",
+        "x": -188,
+        "y": -270,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-AB7A",
+        "type": "ASTEROID",
+        "x": -294,
+        "y": -154,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-C41Z",
+        "type": "ASTEROID",
+        "x": -482,
+        "y": -602,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-ED5B",
+        "type": "ASTEROID",
+        "x": -287,
+        "y": 176,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-F42C",
+        "type": "ASTEROID",
+        "x": 248,
+        "y": -688,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-XC3D",
+        "type": "ASTEROID",
+        "x": -104,
+        "y": 294,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-AA8F",
+        "type": "ASTEROID",
+        "x": -294,
+        "y": -236,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-B40Z",
+        "type": "ASTEROID",
+        "x": 205,
+        "y": -684,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-A39D",
+        "type": "ASTEROID",
+        "x": -421,
+        "y": -641,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-Z12E",
+        "type": "ASTEROID",
+        "x": 24,
+        "y": -340,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-A61C",
+        "type": "ASTEROID",
+        "x": -306,
+        "y": 713,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-Z62D",
+        "type": "ASTEROID",
+        "x": -45,
+        "y": 769,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-E60F",
+        "type": "ASTEROID",
+        "x": 139,
+        "y": 720,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-C13C",
+        "type": "ASTEROID",
+        "x": 169,
+        "y": -288,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-A59X",
+        "type": "ASTEROID",
+        "x": 415,
+        "y": 604,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-A14E",
+        "type": "ASTEROID",
+        "x": 284,
+        "y": -246,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-C64Z",
+        "type": "ASTEROID",
+        "x": -18,
+        "y": 751,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-A18Z",
+        "type": "ASTEROID",
+        "x": 292,
+        "y": 184,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-X15D",
+        "type": "ASTEROID",
+        "x": 305,
+        "y": -226,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-Z65B",
+        "type": "ASTEROID",
+        "x": -627,
+        "y": 338,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-D19A",
+        "type": "ASTEROID",
+        "x": 312,
+        "y": 5,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-E66E",
+        "type": "ASTEROID",
+        "x": -466,
+        "y": 615,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-X68B",
+        "type": "ASTEROID",
+        "x": -411,
+        "y": 624,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-C20E",
+        "type": "ASTEROID",
+        "x": 237,
+        "y": 247,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-C67X",
+        "type": "ASTEROID",
+        "x": -264,
+        "y": 731,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-B16F",
+        "type": "ASTEROID",
+        "x": 326,
+        "y": -77,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-A17F",
+        "type": "ASTEROID",
+        "x": 376,
+        "y": 95,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-X63F",
+        "type": "ASTEROID",
+        "x": -28,
+        "y": 715,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-Z21B",
+        "type": "ASTEROID",
+        "x": 297,
+        "y": 241,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-B23E",
+        "type": "ASTEROID",
+        "x": 147,
+        "y": 291,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-B22C",
+        "type": "ASTEROID",
+        "x": 241,
+        "y": 201,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-X24A",
+        "type": "ASTEROID",
+        "x": 3,
+        "y": 341,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-B32F",
+        "type": "ASTEROID",
+        "x": -725,
+        "y": 126,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-F30F",
+        "type": "ASTEROID",
+        "x": -694,
+        "y": -337,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-B31B",
+        "type": "ASTEROID",
+        "x": -673,
+        "y": 322,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-D28C",
+        "type": "ASTEROID",
+        "x": -753,
+        "y": 128,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-B29D",
+        "type": "ASTEROID",
+        "x": -733,
+        "y": -126,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-E27X",
+        "type": "ASTEROID",
+        "x": -429,
+        "y": 603,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-X26E",
+        "type": "ASTEROID",
+        "x": -772,
+        "y": 161,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-B35E",
+        "type": "ASTEROID",
+        "x": -473,
+        "y": -589,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-F34F",
+        "type": "ASTEROID",
+        "x": -486,
+        "y": -518,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-B38E",
+        "type": "ASTEROID",
+        "x": -414,
+        "y": -585,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-Z37X",
+        "type": "ASTEROID",
+        "x": -714,
+        "y": -307,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-C47X",
+        "type": "ASTEROID",
+        "x": 381,
+        "y": -602,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-C49X",
+        "type": "ASTEROID",
+        "x": 707,
+        "y": -242,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-A36D",
+        "type": "ASTEROID",
+        "x": -492,
+        "y": -608,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-X50C",
+        "type": "ASTEROID",
+        "x": 753,
+        "y": 73,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-F48X",
+        "type": "ASTEROID",
+        "x": 657,
+        "y": -273,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-D51B",
+        "type": "ASTEROID",
+        "x": 754,
+        "y": 241,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-F53X",
+        "type": "ASTEROID",
+        "x": 677,
+        "y": 324,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-A52B",
+        "type": "ASTEROID",
+        "x": 749,
+        "y": -166,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-E54A",
+        "type": "ASTEROID",
+        "x": 703,
+        "y": 295,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-F56B",
+        "type": "ASTEROID",
+        "x": 736,
+        "y": 83,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-X57X",
+        "type": "ASTEROID",
+        "x": 386,
+        "y": 601,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-B55C",
+        "type": "ASTEROID",
+        "x": 608,
+        "y": 470,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-Z25B",
+        "type": "JUMP_GATE",
+        "x": -406,
+        "y": 190,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-F43A",
+        "type": "ASTEROID",
+        "x": 231,
+        "y": -753,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-E10Z",
+        "type": "ASTEROID",
+        "x": -251,
+        "y": -191,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-AD4Z",
+        "type": "ASTEROID",
+        "x": -244,
+        "y": 208,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-C11Z",
+        "type": "ASTEROID",
+        "x": 81,
+        "y": -324,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-D58D",
+        "type": "ASTEROID",
+        "x": 521,
+        "y": 583,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-B45X",
+        "type": "ASTEROID",
+        "x": 581,
+        "y": -438,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-A46X",
+        "type": "ASTEROID",
+        "x": 621,
+        "y": -387,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-E44E",
+        "type": "ASTEROID",
+        "x": -221,
+        "y": -731,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-T70-E33Z",
+        "type": "ASTEROID",
+        "x": -707,
+        "y": -109,
+        "orbitals": []
+      }
+    ],
+    "factions": [
+      {
+        "symbol": "UNITED"
+      }
+    ]
+  },
+  {
+    "symbol": "X1-YX4",
+    "sectorSymbol": "X1",
+    "type": "ORANGE_STAR",
+    "x": -889,
+    "y": 2271,
+    "waypoints": [
+      {
+        "symbol": "X1-YX4-B10Z",
+        "type": "ASTEROID",
+        "x": 609,
+        "y": -437,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-F15A",
+        "type": "ASTEROID",
+        "x": -715,
+        "y": 212,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-D16X",
+        "type": "ASTEROID",
+        "x": -282,
+        "y": -714,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-D13A",
+        "type": "ASTEROID",
+        "x": 291,
+        "y": 710,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-X12Z",
+        "type": "ASTEROID",
+        "x": 676,
+        "y": 391,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-B14B",
+        "type": "ASTEROID",
+        "x": -580,
+        "y": 452,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-XX9X",
+        "type": "ASTEROID",
+        "x": 735,
+        "y": -263,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-BX6D",
+        "type": "ASTEROID",
+        "x": -620,
+        "y": -431,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-AC3D",
+        "type": "PLANET",
+        "x": -26,
+        "y": -18,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-FX5E",
+        "type": "ASTEROID",
+        "x": -486,
+        "y": -619,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-XC8Z",
+        "type": "ASTEROID",
+        "x": 39,
+        "y": -784,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-ZE4E",
+        "type": "GAS_GIANT",
+        "x": 31,
+        "y": -50,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-FD7F",
+        "type": "ASTEROID",
+        "x": 101,
+        "y": -724,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YX4-FE1C",
+        "type": "PLANET",
+        "x": 4,
+        "y": -9,
+        "orbitals": [
+          {
+            "symbol": "X1-YX4-FC2Z"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-YX4-FC2Z",
+        "type": "MOON",
+        "x": 4,
+        "y": -9,
+        "orbitals": [],
+        "orbits": "X1-YX4-FE1C"
+      },
+      {
+        "symbol": "X1-YX4-B11Z",
+        "type": "ASTEROID",
+        "x": 733,
+        "y": -82,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-ZD39",
+    "sectorSymbol": "X1",
+    "type": "RED_STAR",
+    "x": -7698,
+    "y": -2758,
+    "waypoints": [
+      {
+        "symbol": "X1-ZD39-E24D",
+        "type": "ASTEROID",
+        "x": 58,
+        "y": -330,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-ED3D",
+        "type": "ASTEROID",
+        "x": 318,
+        "y": -189,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-Z27E",
+        "type": "ASTEROID",
+        "x": -707,
+        "y": -160,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-C51X",
+        "type": "ASTEROID",
+        "x": 335,
+        "y": 636,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-B52F",
+        "type": "ASTEROID",
+        "x": 626,
+        "y": 338,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-AC4X",
+        "type": "ASTEROID",
+        "x": 45,
+        "y": -319,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-X28C",
+        "type": "ASTEROID",
+        "x": -581,
+        "y": -437,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-E54B",
+        "type": "ASTEROID",
+        "x": -89,
+        "y": 773,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-E55C",
+        "type": "ASTEROID",
+        "x": -60,
+        "y": 775,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-XA5C",
+        "type": "ASTEROID",
+        "x": 179,
+        "y": -288,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-F26A",
+        "type": "JUMP_GATE",
+        "x": 443,
+        "y": -72,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-E31D",
+        "type": "ASTEROID",
+        "x": -708,
+        "y": -207,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-A36Z",
+        "type": "ASTEROID",
+        "x": 61,
+        "y": -731,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-X60A",
+        "type": "ASTEROID",
+        "x": -131,
+        "y": 733,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-D62X",
+        "type": "ASTEROID",
+        "x": -523,
+        "y": 531,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-C34F",
+        "type": "ASTEROID",
+        "x": -573,
+        "y": -505,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-BD6Z",
+        "type": "ASTEROID",
+        "x": 286,
+        "y": -136,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-C61C",
+        "type": "ASTEROID",
+        "x": -655,
+        "y": 424,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-B35E",
+        "type": "ASTEROID",
+        "x": -3,
+        "y": -768,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-F63A",
+        "type": "ASTEROID",
+        "x": -427,
+        "y": 648,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-C33A",
+        "type": "ASTEROID",
+        "x": -716,
+        "y": -221,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-A41Z",
+        "type": "ASTEROID",
+        "x": 51,
+        "y": -741,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-F39X",
+        "type": "ASTEROID",
+        "x": 360,
+        "y": -690,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-X42B",
+        "type": "ASTEROID",
+        "x": 565,
+        "y": -542,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-B45Z",
+        "type": "ASTEROID",
+        "x": 713,
+        "y": -301,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-C12C",
+        "type": "ASTEROID",
+        "x": 48,
+        "y": 318,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-D15X",
+        "type": "ASTEROID",
+        "x": -177,
+        "y": 312,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-C14Z",
+        "type": "ASTEROID",
+        "x": -349,
+        "y": 161,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-B10X",
+        "type": "ASTEROID",
+        "x": 206,
+        "y": 246,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-C16C",
+        "type": "ASTEROID",
+        "x": -319,
+        "y": 58,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-D44B",
+        "type": "ASTEROID",
+        "x": 693,
+        "y": -220,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-B18F",
+        "type": "ASTEROID",
+        "x": -305,
+        "y": 145,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-F48X",
+        "type": "ASTEROID",
+        "x": 722,
+        "y": 264,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-D58B",
+        "type": "ASTEROID",
+        "x": -524,
+        "y": 564,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-BA9C",
+        "type": "ASTEROID",
+        "x": 345,
+        "y": 99,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-E46Z",
+        "type": "ASTEROID",
+        "x": 740,
+        "y": -266,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-F59Z",
+        "type": "ASTEROID",
+        "x": -220,
+        "y": 709,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-X38Z",
+        "type": "ASTEROID",
+        "x": -125,
+        "y": -719,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-F25E",
+        "type": "ASTEROID",
+        "x": 232,
+        "y": -295,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-D29B",
+        "type": "ASTEROID",
+        "x": -724,
+        "y": 53,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-X40C",
+        "type": "ASTEROID",
+        "x": 488,
+        "y": -592,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-C50C",
+        "type": "ASTEROID",
+        "x": 683,
+        "y": 330,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-C65D",
+        "type": "ASTEROID",
+        "x": -598,
+        "y": 478,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-A43F",
+        "type": "ASTEROID",
+        "x": 635,
+        "y": -341,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-F47C",
+        "type": "ASTEROID",
+        "x": 717,
+        "y": 288,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-B30A",
+        "type": "ASTEROID",
+        "x": -781,
+        "y": 90,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-CE7A",
+        "type": "ASTEROID",
+        "x": 353,
+        "y": 83,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-X17A",
+        "type": "ASTEROID",
+        "x": -298,
+        "y": 116,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-F23E",
+        "type": "ASTEROID",
+        "x": -250,
+        "y": -266,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-X57A",
+        "type": "ASTEROID",
+        "x": 334,
+        "y": 714,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-F66B",
+        "type": "ASTEROID",
+        "x": -694,
+        "y": 173,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-F20E",
+        "type": "ASTEROID",
+        "x": -344,
+        "y": 34,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-XZ2C",
+        "type": "ASTEROID",
+        "x": -82,
+        "y": -370,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-A32Z",
+        "type": "ASTEROID",
+        "x": -654,
+        "y": -432,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-AF8D",
+        "type": "ASTEROID",
+        "x": 303,
+        "y": 91,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-FF1A",
+        "type": "ASTEROID",
+        "x": 148,
+        "y": -330,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-X56A",
+        "type": "ASTEROID",
+        "x": -332,
+        "y": 690,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-D37C",
+        "type": "ASTEROID",
+        "x": -371,
+        "y": -670,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-A21X",
+        "type": "ASTEROID",
+        "x": -318,
+        "y": 62,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-C11A",
+        "type": "ASTEROID",
+        "x": -35,
+        "y": 373,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-Z19B",
+        "type": "ASTEROID",
+        "x": -289,
+        "y": 165,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-D22D",
+        "type": "ASTEROID",
+        "x": -297,
+        "y": -139,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-D49Z",
+        "type": "ASTEROID",
+        "x": 678,
+        "y": 404,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-D53X",
+        "type": "ASTEROID",
+        "x": -66,
+        "y": 746,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-B64C",
+        "type": "ASTEROID",
+        "x": -742,
+        "y": 177,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-ZD39-E13F",
+        "type": "ASTEROID",
+        "x": -236,
+        "y": 298,
+        "orbitals": []
+      }
+    ],
+    "factions": [
+      {
+        "symbol": "UNITED"
+      }
+    ]
+  },
+  {
+    "symbol": "X1-HP83",
+    "sectorSymbol": "X1",
+    "type": "YOUNG_STAR",
+    "x": -2856,
+    "y": 838,
+    "waypoints": [
+      {
+        "symbol": "X1-HP83-CX4C",
+        "type": "ASTEROID",
+        "x": -478,
+        "y": 561,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-HP83-EE3X",
+        "type": "ASTEROID",
+        "x": -454,
+        "y": 600,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-HP83-EB2Z",
+        "type": "ASTEROID",
+        "x": 241,
+        "y": 751,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-HP83-AF6B",
+        "type": "ASTEROID",
+        "x": -471,
+        "y": -569,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-HP83-ZE7Z",
+        "type": "ASTEROID",
+        "x": 220,
+        "y": -686,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-HP83-BE9B",
+        "type": "ASTEROID",
+        "x": 346,
+        "y": 695,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-HP83-BA1A",
+        "type": "PLANET",
+        "x": 7,
+        "y": -10,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-HP83-ZX8F",
+        "type": "ASTEROID",
+        "x": 728,
+        "y": -241,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-HP83-ZC5C",
+        "type": "ASTEROID",
+        "x": -781,
+        "y": -84,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-RU73",
+    "sectorSymbol": "X1",
+    "type": "BLUE_STAR",
+    "x": -8072,
+    "y": -1122,
+    "waypoints": [
+      {
+        "symbol": "X1-RU73-B12F",
+        "type": "ASTEROID",
+        "x": 622,
+        "y": -425,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RU73-EX2F",
+        "type": "MOON",
+        "x": -13,
+        "y": 6,
+        "orbitals": [],
+        "orbits": "X1-RU73-EC1B"
+      },
+      {
+        "symbol": "X1-RU73-D15A",
+        "type": "ASTEROID",
+        "x": -604,
+        "y": 379,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RU73-FF5D",
+        "type": "MOON",
+        "x": -40,
+        "y": -44,
+        "orbitals": [],
+        "orbits": "X1-RU73-ZX4Z"
+      },
+      {
+        "symbol": "X1-RU73-ZA3C",
+        "type": "GAS_GIANT",
+        "x": -28,
+        "y": 9,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RU73-ED9A",
+        "type": "ASTEROID",
+        "x": -555,
+        "y": -453,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RU73-EE6C",
+        "type": "GAS_GIANT",
+        "x": -49,
+        "y": -71,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RU73-EC1B",
+        "type": "PLANET",
+        "x": -13,
+        "y": 6,
+        "orbitals": [
+          {
+            "symbol": "X1-RU73-EX2F"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-RU73-X13B",
+        "type": "ASTEROID",
+        "x": 493,
+        "y": 616,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RU73-A10B",
+        "type": "ASTEROID",
+        "x": 655,
+        "y": -315,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RU73-C14X",
+        "type": "ASTEROID",
+        "x": -185,
+        "y": 718,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RU73-DB8A",
+        "type": "ASTEROID",
+        "x": -672,
+        "y": -284,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RU73-ZX4Z",
+        "type": "GAS_GIANT",
+        "x": -40,
+        "y": -44,
+        "orbitals": [
+          {
+            "symbol": "X1-RU73-FF5D"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-RU73-CF7C",
+        "type": "ASTEROID",
+        "x": -656,
+        "y": 382,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RU73-C11B",
+        "type": "ASTEROID",
+        "x": 515,
+        "y": -596,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-JH63",
+    "sectorSymbol": "X1",
+    "type": "ORANGE_STAR",
+    "x": -2672,
+    "y": 511,
+    "waypoints": [
+      {
+        "symbol": "X1-JH63-EB1X",
+        "type": "PLANET",
+        "x": 18,
+        "y": 5,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JH63-FC2C",
+        "type": "PLANET",
+        "x": -12,
+        "y": 26,
+        "orbitals": [
+          {
+            "symbol": "X1-JH63-CC3F"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-JH63-FA9E",
+        "type": "ASTEROID",
+        "x": 736,
+        "y": 166,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JH63-C12X",
+        "type": "ASTEROID",
+        "x": -328,
+        "y": 672,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JH63-B13B",
+        "type": "ASTEROID",
+        "x": -610,
+        "y": 415,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JH63-AC8D",
+        "type": "ASTEROID",
+        "x": 673,
+        "y": -408,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JH63-X11E",
+        "type": "ASTEROID",
+        "x": -254,
+        "y": 697,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JH63-EX7C",
+        "type": "ASTEROID",
+        "x": -107,
+        "y": -735,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JH63-Z14A",
+        "type": "ASTEROID",
+        "x": 29,
+        "y": -757,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JH63-DF5D",
+        "type": "ASTEROID",
+        "x": -422,
+        "y": -596,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JH63-AZ6E",
+        "type": "ASTEROID",
+        "x": -505,
+        "y": -544,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JH63-CC3F",
+        "type": "MOON",
+        "x": -12,
+        "y": 26,
+        "orbitals": [],
+        "orbits": "X1-JH63-FC2C"
+      },
+      {
+        "symbol": "X1-JH63-C10A",
+        "type": "ASTEROID",
+        "x": 107,
+        "y": 775,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JH63-BF4B",
+        "type": "GAS_GIANT",
+        "x": -33,
+        "y": -22,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-PJ57",
+    "sectorSymbol": "X1",
+    "type": "ORANGE_STAR",
+    "x": 602,
+    "y": -4670,
+    "waypoints": [
+      {
+        "symbol": "X1-PJ57-FZ9E",
+        "type": "ASTEROID",
+        "x": -712,
+        "y": -307,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PJ57-FZ2F",
+        "type": "MOON",
+        "x": 20,
+        "y": -1,
+        "orbitals": [],
+        "orbits": "X1-PJ57-AA1D"
+      },
+      {
+        "symbol": "X1-PJ57-E10X",
+        "type": "ASTEROID",
+        "x": -596,
+        "y": -466,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PJ57-E11X",
+        "type": "ASTEROID",
+        "x": 213,
+        "y": -734,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PJ57-CD4A",
+        "type": "ASTEROID",
+        "x": 254,
+        "y": 684,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PJ57-EC5Z",
+        "type": "ASTEROID",
+        "x": 502,
+        "y": 560,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PJ57-Z12X",
+        "type": "ASTEROID",
+        "x": 697,
+        "y": -277,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PJ57-XC3Z",
+        "type": "ASTEROID",
+        "x": 719,
+        "y": 172,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PJ57-DB6D",
+        "type": "ASTEROID",
+        "x": 282,
+        "y": 716,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PJ57-ZZ7F",
+        "type": "ASTEROID",
+        "x": -261,
+        "y": 735,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PJ57-AA1D",
+        "type": "PLANET",
+        "x": 20,
+        "y": -1,
+        "orbitals": [
+          {
+            "symbol": "X1-PJ57-FZ2F"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-PJ57-XD8A",
+        "type": "ASTEROID",
+        "x": -755,
+        "y": 38,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-RT2",
+    "sectorSymbol": "X1",
+    "type": "BLUE_STAR",
+    "x": -3322,
+    "y": 469,
+    "waypoints": [
+      {
+        "symbol": "X1-RT2-CX1F",
+        "type": "PLANET",
+        "x": -18,
+        "y": 1,
+        "orbitals": [
+          {
+            "symbol": "X1-RT2-EA2A"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-RT2-ZB5A",
+        "type": "ASTEROID",
+        "x": 117,
+        "y": 708,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-XE4Z",
+        "type": "ASTEROID",
+        "x": 243,
+        "y": 743,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-D12X",
+        "type": "ASTEROID",
+        "x": 513,
+        "y": -540,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-AE8B",
+        "type": "ASTEROID",
+        "x": -692,
+        "y": -191,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-B13D",
+        "type": "ASTEROID",
+        "x": 507,
+        "y": -533,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-XZ6X",
+        "type": "ASTEROID",
+        "x": -269,
+        "y": 668,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-BE9D",
+        "type": "ASTEROID",
+        "x": -731,
+        "y": -216,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-EA2A",
+        "type": "MOON",
+        "x": -18,
+        "y": 1,
+        "orbitals": [],
+        "orbits": "X1-RT2-CX1F"
+      },
+      {
+        "symbol": "X1-RT2-AX3A",
+        "type": "GAS_GIANT",
+        "x": -24,
+        "y": -35,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-D11D",
+        "type": "ASTEROID",
+        "x": 377,
+        "y": -671,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-FB7F",
+        "type": "ASTEROID",
+        "x": -366,
+        "y": 683,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-Z15E",
+        "type": "ASTEROID",
+        "x": 575,
+        "y": 504,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-E14A",
+        "type": "ASTEROID",
+        "x": 760,
+        "y": -97,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RT2-D10D",
+        "type": "ASTEROID",
+        "x": -246,
+        "y": -706,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-RR24",
+    "sectorSymbol": "X1",
+    "type": "NEUTRON_STAR",
+    "x": -4789,
+    "y": -3138,
+    "waypoints": [],
+    "factions": []
+  },
+  {
+    "symbol": "X1-RH37",
+    "sectorSymbol": "X1",
+    "type": "UNSTABLE",
+    "x": -2013,
+    "y": 1493,
+    "waypoints": [],
+    "factions": []
+  },
+  {
+    "symbol": "X1-PD61",
+    "sectorSymbol": "X1",
+    "type": "ORANGE_STAR",
+    "x": 1590,
+    "y": 219,
+    "waypoints": [
+      {
+        "symbol": "X1-PD61-FD7F",
+        "type": "ASTEROID",
+        "x": -294,
+        "y": -661,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PD61-FF4A",
+        "type": "ASTEROID",
+        "x": -633,
+        "y": 395,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PD61-BA9E",
+        "type": "ASTEROID",
+        "x": 668,
+        "y": -331,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PD61-XC3B",
+        "type": "ASTEROID",
+        "x": 594,
+        "y": 467,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PD61-AB5Z",
+        "type": "ASTEROID",
+        "x": -289,
+        "y": 719,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PD61-XC2X",
+        "type": "ASTEROID",
+        "x": 734,
+        "y": -16,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PD61-AX6E",
+        "type": "ASTEROID",
+        "x": -762,
+        "y": 124,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PD61-CB1D",
+        "type": "GAS_GIANT",
+        "x": -5,
+        "y": -17,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PD61-XB8Z",
+        "type": "ASTEROID",
+        "x": 276,
+        "y": -688,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-RR79",
+    "sectorSymbol": "X1",
+    "type": "BLUE_STAR",
+    "x": 2946,
+    "y": 5171,
+    "waypoints": [
+      {
+        "symbol": "X1-RR79-F15D",
+        "type": "ASTEROID",
+        "x": 697,
+        "y": 248,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-ZA2Z",
+        "type": "GAS_GIANT",
+        "x": 31,
+        "y": -23,
+        "orbitals": [
+          {
+            "symbol": "X1-RR79-BE3B"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-RR79-E11Z",
+        "type": "ASTEROID",
+        "x": 204,
+        "y": -706,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-FX6C",
+        "type": "ASTEROID",
+        "x": -317,
+        "y": 718,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-CE1E",
+        "type": "PLANET",
+        "x": 0,
+        "y": 14,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-F12X",
+        "type": "ASTEROID",
+        "x": 423,
+        "y": -646,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-X13D",
+        "type": "ASTEROID",
+        "x": 460,
+        "y": -621,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-XX5F",
+        "type": "ASTEROID",
+        "x": 741,
+        "y": -9,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-F14D",
+        "type": "ASTEROID",
+        "x": 519,
+        "y": -560,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-DA8C",
+        "type": "ASTEROID",
+        "x": -716,
+        "y": -254,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-CZ4C",
+        "type": "GAS_GIANT",
+        "x": 59,
+        "y": -41,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-E10X",
+        "type": "ASTEROID",
+        "x": 40,
+        "y": -758,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-ZC9C",
+        "type": "ASTEROID",
+        "x": -713,
+        "y": -198,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-RR79-BE3B",
+        "type": "MOON",
+        "x": 31,
+        "y": -23,
+        "orbitals": [],
+        "orbits": "X1-RR79-ZA2Z"
+      },
+      {
+        "symbol": "X1-RR79-AD7B",
+        "type": "ASTEROID",
+        "x": -744,
+        "y": 84,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-QH54",
+    "sectorSymbol": "X1",
+    "type": "BLUE_STAR",
+    "x": 1595,
+    "y": -164,
+    "waypoints": [
+      {
+        "symbol": "X1-QH54-F43A",
+        "type": "ASTEROID",
+        "x": 430,
+        "y": -658,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-D46A",
+        "type": "ASTEROID",
+        "x": 400,
+        "y": 637,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-CE9A",
+        "type": "JUMP_GATE",
+        "x": 359,
+        "y": -270,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-FA3X",
+        "type": "MOON",
+        "x": -28,
+        "y": 39,
+        "orbitals": [],
+        "orbits": "X1-QH54-XX2E"
+      },
+      {
+        "symbol": "X1-QH54-D39A",
+        "type": "ASTEROID",
+        "x": 123,
+        "y": 360,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-Z19Z",
+        "type": "ASTEROID",
+        "x": -188,
+        "y": -251,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-F25C",
+        "type": "ASTEROID",
+        "x": -27,
+        "y": -316,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-C33F",
+        "type": "ASTEROID",
+        "x": 354,
+        "y": 99,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-E42A",
+        "type": "ASTEROID",
+        "x": 443,
+        "y": -577,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-C44B",
+        "type": "ASTEROID",
+        "x": 727,
+        "y": -269,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-F29F",
+        "type": "ASTEROID",
+        "x": 384,
+        "y": -46,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-F40C",
+        "type": "ASTEROID",
+        "x": 234,
+        "y": 259,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-E54A",
+        "type": "ASTEROID",
+        "x": -596,
+        "y": -450,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-C48C",
+        "type": "ASTEROID",
+        "x": -459,
+        "y": 622,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-A34A",
+        "type": "ASTEROID",
+        "x": 310,
+        "y": 23,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-C38C",
+        "type": "ASTEROID",
+        "x": 297,
+        "y": 201,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-B57X",
+        "type": "ASTEROID",
+        "x": -460,
+        "y": -597,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-C47C",
+        "type": "ASTEROID",
+        "x": 592,
+        "y": 413,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-E50Z",
+        "type": "ASTEROID",
+        "x": -575,
+        "y": 530,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-F35F",
+        "type": "ASTEROID",
+        "x": 194,
+        "y": 301,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-E53C",
+        "type": "ASTEROID",
+        "x": -762,
+        "y": 206,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-X60A",
+        "type": "ASTEROID",
+        "x": 555,
+        "y": -488,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-DX8Z",
+        "type": "GAS_GIANT",
+        "x": -101,
+        "y": 2,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-X58Z",
+        "type": "ASTEROID",
+        "x": -603,
+        "y": -410,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-B51A",
+        "type": "ASTEROID",
+        "x": -59,
+        "y": 755,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-ZF6F",
+        "type": "PLANET",
+        "x": 15,
+        "y": -74,
+        "orbitals": [
+          {
+            "symbol": "X1-QH54-DZ7B"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-QH54-DZ7B",
+        "type": "MOON",
+        "x": 15,
+        "y": -74,
+        "orbitals": [],
+        "orbits": "X1-QH54-ZF6F"
+      },
+      {
+        "symbol": "X1-QH54-CE4Z",
+        "type": "PLANET",
+        "x": 58,
+        "y": -19,
+        "orbitals": [
+          {
+            "symbol": "X1-QH54-AF5A"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-QH54-F18B",
+        "type": "ASTEROID",
+        "x": -297,
+        "y": 158,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-C37F",
+        "type": "ASTEROID",
+        "x": 261,
+        "y": 277,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-X55B",
+        "type": "ASTEROID",
+        "x": -763,
+        "y": 18,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-Z49E",
+        "type": "ASTEROID",
+        "x": 14,
+        "y": 787,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-B28A",
+        "type": "ASTEROID",
+        "x": 372,
+        "y": -108,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-Z10X",
+        "type": "FUEL_STATION",
+        "x": 184,
+        "y": -138,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-AF5A",
+        "type": "MOON",
+        "x": 58,
+        "y": -19,
+        "orbitals": [],
+        "orbits": "X1-QH54-CE4Z"
+      },
+      {
+        "symbol": "X1-QH54-BC1F",
+        "type": "PLANET",
+        "x": -12,
+        "y": 12,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-E16Z",
+        "type": "ASTEROID",
+        "x": -298,
+        "y": 148,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-F22A",
+        "type": "ASTEROID",
+        "x": -109,
+        "y": -343,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-X31Z",
+        "type": "ASTEROID",
+        "x": 343,
+        "y": -69,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-B36B",
+        "type": "ASTEROID",
+        "x": 262,
+        "y": 167,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-X15X",
+        "type": "ASTEROID",
+        "x": -108,
+        "y": 331,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-A12E",
+        "type": "ASTEROID",
+        "x": -161,
+        "y": 276,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-B59B",
+        "type": "ASTEROID",
+        "x": -315,
+        "y": -658,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-X24Z",
+        "type": "ASTEROID",
+        "x": -80,
+        "y": -307,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-XX2E",
+        "type": "PLANET",
+        "x": -28,
+        "y": 39,
+        "orbitals": [
+          {
+            "symbol": "X1-QH54-FA3X"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-QH54-C17X",
+        "type": "ASTEROID",
+        "x": -368,
+        "y": 3,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-C26D",
+        "type": "ASTEROID",
+        "x": 203,
+        "y": -296,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-E41D",
+        "type": "ASTEROID",
+        "x": 219,
+        "y": 280,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-A45C",
+        "type": "ASTEROID",
+        "x": 724,
+        "y": -116,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-F27F",
+        "type": "ASTEROID",
+        "x": 128,
+        "y": -320,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-D13F",
+        "type": "ASTEROID",
+        "x": -114,
+        "y": 335,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-B21E",
+        "type": "ASTEROID",
+        "x": -115,
+        "y": -345,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-B52A",
+        "type": "ASTEROID",
+        "x": -148,
+        "y": 723,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-A14X",
+        "type": "ASTEROID",
+        "x": -217,
+        "y": 270,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-E20A",
+        "type": "ASTEROID",
+        "x": -224,
+        "y": -292,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-D30A",
+        "type": "ASTEROID",
+        "x": 361,
+        "y": -21,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-A11B",
+        "type": "ASTEROID",
+        "x": 61,
+        "y": 330,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-B56D",
+        "type": "ASTEROID",
+        "x": -473,
+        "y": -555,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-Z23C",
+        "type": "ASTEROID",
+        "x": -41,
+        "y": -332,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QH54-F32B",
+        "type": "ASTEROID",
+        "x": 303,
+        "y": -129,
+        "orbitals": []
+      }
+    ],
+    "factions": [
+      {
+        "symbol": "SOLITARY"
+      }
+    ]
+  },
+  {
+    "symbol": "X1-JP43",
+    "sectorSymbol": "X1",
+    "type": "ORANGE_STAR",
+    "x": -628,
+    "y": 1714,
+    "waypoints": [
+      {
+        "symbol": "X1-JP43-C17B",
+        "type": "ASTEROID",
+        "x": 162,
+        "y": 340,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-B52X",
+        "type": "ASTEROID",
+        "x": 631,
+        "y": -444,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-E25E",
+        "type": "ASTEROID",
+        "x": 97,
+        "y": 709,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-XB1X",
+        "type": "ASTEROID",
+        "x": -369,
+        "y": -12,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-D44Z",
+        "type": "ASTEROID",
+        "x": -777,
+        "y": -6,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-Z35C",
+        "type": "ASTEROID",
+        "x": -732,
+        "y": 207,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-X12D",
+        "type": "ASTEROID",
+        "x": 269,
+        "y": -268,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-E55A",
+        "type": "ASTEROID",
+        "x": 740,
+        "y": -261,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-F24F",
+        "type": "ASTEROID",
+        "x": 524,
+        "y": 533,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-F10E",
+        "type": "ASTEROID",
+        "x": 146,
+        "y": -335,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-A45D",
+        "type": "ASTEROID",
+        "x": -483,
+        "y": -561,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-E33E",
+        "type": "ASTEROID",
+        "x": -326,
+        "y": 716,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-EB7B",
+        "type": "ASTEROID",
+        "x": -327,
+        "y": -126,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-C47C",
+        "type": "ASTEROID",
+        "x": -25,
+        "y": -761,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-A38X",
+        "type": "ASTEROID",
+        "x": -727,
+        "y": -185,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-Z11F",
+        "type": "ASTEROID",
+        "x": 161,
+        "y": -271,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-E46A",
+        "type": "ASTEROID",
+        "x": -648,
+        "y": -366,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-C37D",
+        "type": "ASTEROID",
+        "x": -712,
+        "y": -241,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-A15B",
+        "type": "ASTEROID",
+        "x": 363,
+        "y": -37,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-D50A",
+        "type": "ASTEROID",
+        "x": -34,
+        "y": -756,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-B31E",
+        "type": "ASTEROID",
+        "x": 97,
+        "y": 766,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-C40Z",
+        "type": "ASTEROID",
+        "x": -678,
+        "y": -246,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-D56A",
+        "type": "ASTEROID",
+        "x": 624,
+        "y": -473,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-A23B",
+        "type": "ASTEROID",
+        "x": 693,
+        "y": 165,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-DC9F",
+        "type": "ASTEROID",
+        "x": 75,
+        "y": -354,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-F57A",
+        "type": "ASTEROID",
+        "x": 748,
+        "y": -216,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-E36X",
+        "type": "ASTEROID",
+        "x": -722,
+        "y": 75,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-F41C",
+        "type": "ASTEROID",
+        "x": -692,
+        "y": -279,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-D51E",
+        "type": "ASTEROID",
+        "x": 531,
+        "y": -517,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-B34E",
+        "type": "ASTEROID",
+        "x": -552,
+        "y": 476,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-XC2C",
+        "type": "ASTEROID",
+        "x": -223,
+        "y": 286,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-B48Z",
+        "type": "ASTEROID",
+        "x": 31,
+        "y": -789,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-Z21D",
+        "type": "ASTEROID",
+        "x": -315,
+        "y": 126,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-AF5D",
+        "type": "ASTEROID",
+        "x": -290,
+        "y": -209,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-B53A",
+        "type": "ASTEROID",
+        "x": 418,
+        "y": -625,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-F19C",
+        "type": "ASTEROID",
+        "x": 59,
+        "y": 385,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-C13X",
+        "type": "ASTEROID",
+        "x": 330,
+        "y": -35,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-Z43D",
+        "type": "ASTEROID",
+        "x": -526,
+        "y": -481,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-A22C",
+        "type": "JUMP_GATE",
+        "x": -379,
+        "y": -244,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-Z14B",
+        "type": "ASTEROID",
+        "x": 325,
+        "y": -195,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-Z49D",
+        "type": "ASTEROID",
+        "x": -219,
+        "y": -736,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-C26A",
+        "type": "ASTEROID",
+        "x": 439,
+        "y": 604,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-BE4D",
+        "type": "ASTEROID",
+        "x": -370,
+        "y": -43,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-F60C",
+        "type": "ASTEROID",
+        "x": 636,
+        "y": -361,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-Z32C",
+        "type": "ASTEROID",
+        "x": -157,
+        "y": 714,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-B18D",
+        "type": "ASTEROID",
+        "x": -200,
+        "y": 271,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-E61F",
+        "type": "ASTEROID",
+        "x": 576,
+        "y": 499,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-A30C",
+        "type": "ASTEROID",
+        "x": 54,
+        "y": 733,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-F16C",
+        "type": "ASTEROID",
+        "x": 271,
+        "y": 187,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-F42Z",
+        "type": "ASTEROID",
+        "x": -390,
+        "y": -665,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-E28C",
+        "type": "ASTEROID",
+        "x": -47,
+        "y": 753,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-AZ8Z",
+        "type": "ASTEROID",
+        "x": -281,
+        "y": -232,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-C59E",
+        "type": "ASTEROID",
+        "x": 696,
+        "y": 206,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-F20A",
+        "type": "ASTEROID",
+        "x": -260,
+        "y": 185,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-DZ6Z",
+        "type": "ASTEROID",
+        "x": -51,
+        "y": -319,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-X58E",
+        "type": "ASTEROID",
+        "x": 697,
+        "y": 174,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-D27B",
+        "type": "ASTEROID",
+        "x": -45,
+        "y": 781,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-CF3Z",
+        "type": "ASTEROID",
+        "x": -316,
+        "y": -32,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-C54C",
+        "type": "ASTEROID",
+        "x": 688,
+        "y": -269,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-Z29Z",
+        "type": "ASTEROID",
+        "x": -16,
+        "y": 775,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-JP43-E39C",
+        "type": "ASTEROID",
+        "x": -766,
+        "y": -145,
+        "orbitals": []
+      }
+    ],
+    "factions": [
+      {
+        "symbol": "OMEGA"
+      }
+    ]
+  },
+  {
+    "symbol": "X1-PP78",
+    "sectorSymbol": "X1",
+    "type": "ORANGE_STAR",
+    "x": 1214,
+    "y": 82,
+    "waypoints": [
+      {
+        "symbol": "X1-PP78-Z10Z",
+        "type": "ASTEROID",
+        "x": 770,
+        "y": 164,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PP78-C11E",
+        "type": "ASTEROID",
+        "x": 396,
+        "y": 658,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PP78-BE5E",
+        "type": "ASTEROID",
+        "x": -742,
+        "y": -240,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PP78-CF3E",
+        "type": "ASTEROID",
+        "x": -404,
+        "y": 589,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PP78-BD7D",
+        "type": "ASTEROID",
+        "x": -154,
+        "y": -740,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PP78-DD1A",
+        "type": "PLANET",
+        "x": 18,
+        "y": 1,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PP78-FF8Z",
+        "type": "ASTEROID",
+        "x": 334,
+        "y": -690,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PP78-XD6A",
+        "type": "ASTEROID",
+        "x": -116,
+        "y": -720,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PP78-EB2C",
+        "type": "ASTEROID",
+        "x": 144,
+        "y": 759,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PP78-FA4C",
+        "type": "ASTEROID",
+        "x": -687,
+        "y": 315,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PP78-EF9F",
+        "type": "ASTEROID",
+        "x": 695,
+        "y": 180,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-QY67",
+    "sectorSymbol": "X1",
+    "type": "RED_STAR",
+    "x": -230,
+    "y": 961,
+    "waypoints": [
+      {
+        "symbol": "X1-QY67-Z40X",
+        "type": "ASTEROID",
+        "x": 285,
+        "y": -723,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-D67C",
+        "type": "ASTEROID",
+        "x": 326,
+        "y": 653,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-B56B",
+        "type": "ASTEROID",
+        "x": 624,
+        "y": 342,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-DX2Z",
+        "type": "ASTEROID",
+        "x": 236,
+        "y": 266,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-D64C",
+        "type": "ASTEROID",
+        "x": 115,
+        "y": 716,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-F53X",
+        "type": "ASTEROID",
+        "x": 690,
+        "y": 211,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-B37B",
+        "type": "ASTEROID",
+        "x": -78,
+        "y": -775,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-Z58X",
+        "type": "ASTEROID",
+        "x": 674,
+        "y": 234,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X65D",
+        "type": "ASTEROID",
+        "x": -263,
+        "y": 716,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X52E",
+        "type": "ASTEROID",
+        "x": 704,
+        "y": 289,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X22A",
+        "type": "ASTEROID",
+        "x": 278,
+        "y": -172,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-CX9F",
+        "type": "ASTEROID",
+        "x": -258,
+        "y": 209,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-E48C",
+        "type": "ASTEROID",
+        "x": 665,
+        "y": -270,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-Z35A",
+        "type": "ASTEROID",
+        "x": -748,
+        "y": -185,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-D59F",
+        "type": "ASTEROID",
+        "x": 416,
+        "y": 641,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-E50C",
+        "type": "ASTEROID",
+        "x": 725,
+        "y": 51,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-B25A",
+        "type": "JUMP_GATE",
+        "x": 293,
+        "y": -340,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-A44C",
+        "type": "ASTEROID",
+        "x": 265,
+        "y": -697,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-F14A",
+        "type": "ASTEROID",
+        "x": -26,
+        "y": -354,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X17E",
+        "type": "ASTEROID",
+        "x": -75,
+        "y": -326,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X23C",
+        "type": "ASTEROID",
+        "x": 150,
+        "y": -292,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-ZF8Z",
+        "type": "ASTEROID",
+        "x": -311,
+        "y": 121,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-E11A",
+        "type": "ASTEROID",
+        "x": -314,
+        "y": -99,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X18B",
+        "type": "ASTEROID",
+        "x": 47,
+        "y": -332,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-C26B",
+        "type": "ASTEROID",
+        "x": -417,
+        "y": 628,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-XX6C",
+        "type": "ASTEROID",
+        "x": 166,
+        "y": 288,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-C46D",
+        "type": "ASTEROID",
+        "x": 753,
+        "y": -50,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-B21X",
+        "type": "ASTEROID",
+        "x": 241,
+        "y": -254,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-Z27D",
+        "type": "ASTEROID",
+        "x": -37,
+        "y": 714,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-B39D",
+        "type": "ASTEROID",
+        "x": -181,
+        "y": -737,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-Z66E",
+        "type": "ASTEROID",
+        "x": -347,
+        "y": 689,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-C20X",
+        "type": "ASTEROID",
+        "x": 306,
+        "y": -172,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-XC4B",
+        "type": "ASTEROID",
+        "x": 171,
+        "y": 280,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X13C",
+        "type": "ASTEROID",
+        "x": -175,
+        "y": -293,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-Z29B",
+        "type": "ASTEROID",
+        "x": -514,
+        "y": 518,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-A28B",
+        "type": "ASTEROID",
+        "x": -122,
+        "y": 770,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-F57B",
+        "type": "ASTEROID",
+        "x": 753,
+        "y": 60,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-E12D",
+        "type": "ASTEROID",
+        "x": -322,
+        "y": -197,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-E19E",
+        "type": "ASTEROID",
+        "x": 136,
+        "y": -302,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-A10B",
+        "type": "ASTEROID",
+        "x": -305,
+        "y": -82,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-F61A",
+        "type": "ASTEROID",
+        "x": 693,
+        "y": 246,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X30D",
+        "type": "ASTEROID",
+        "x": -556,
+        "y": 499,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-EC3X",
+        "type": "ASTEROID",
+        "x": 378,
+        "y": 90,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-F49C",
+        "type": "ASTEROID",
+        "x": 729,
+        "y": -126,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-B33Z",
+        "type": "ASTEROID",
+        "x": -717,
+        "y": -7,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-D41E",
+        "type": "ASTEROID",
+        "x": -3,
+        "y": -763,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-C51C",
+        "type": "ASTEROID",
+        "x": 507,
+        "y": -544,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-B34B",
+        "type": "ASTEROID",
+        "x": -588,
+        "y": -434,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-AD1Z",
+        "type": "ASTEROID",
+        "x": 362,
+        "y": -4,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-E47X",
+        "type": "ASTEROID",
+        "x": 334,
+        "y": -628,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-D38D",
+        "type": "ASTEROID",
+        "x": -499,
+        "y": -574,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-C60D",
+        "type": "ASTEROID",
+        "x": 462,
+        "y": 566,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X69Z",
+        "type": "ASTEROID",
+        "x": -345,
+        "y": 671,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-Z16E",
+        "type": "ASTEROID",
+        "x": 44,
+        "y": -364,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-F36A",
+        "type": "ASTEROID",
+        "x": -539,
+        "y": -569,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-E42E",
+        "type": "ASTEROID",
+        "x": -163,
+        "y": -710,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X45X",
+        "type": "ASTEROID",
+        "x": 560,
+        "y": -545,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-E54X",
+        "type": "ASTEROID",
+        "x": 745,
+        "y": -255,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-B24B",
+        "type": "ASTEROID",
+        "x": 333,
+        "y": 64,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-F43D",
+        "type": "ASTEROID",
+        "x": 353,
+        "y": -680,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-E63F",
+        "type": "ASTEROID",
+        "x": 89,
+        "y": 738,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X55X",
+        "type": "ASTEROID",
+        "x": 747,
+        "y": -171,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-FD7A",
+        "type": "ASTEROID",
+        "x": -191,
+        "y": 319,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-D68C",
+        "type": "ASTEROID",
+        "x": -115,
+        "y": 719,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-X15E",
+        "type": "ASTEROID",
+        "x": 186,
+        "y": -300,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-D32C",
+        "type": "ASTEROID",
+        "x": -787,
+        "y": 0,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-XB5F",
+        "type": "ASTEROID",
+        "x": 204,
+        "y": 257,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-Z62F",
+        "type": "ASTEROID",
+        "x": 694,
+        "y": 256,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-QY67-A31B",
+        "type": "ASTEROID",
+        "x": -780,
+        "y": -3,
+        "orbitals": []
+      }
+    ],
+    "factions": [
+      {
+        "symbol": "ECHO"
+      }
+    ]
+  },
+  {
+    "symbol": "X1-PN39",
+    "sectorSymbol": "X1",
+    "type": "ORANGE_STAR",
+    "x": -319,
+    "y": 3000,
+    "waypoints": [
+      {
+        "symbol": "X1-PN39-CB9X",
+        "type": "ASTEROID",
+        "x": 704,
+        "y": 112,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PN39-XX3A",
+        "type": "PLANET",
+        "x": 31,
+        "y": -9,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PN39-A10E",
+        "type": "ASTEROID",
+        "x": 136,
+        "y": 736,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PN39-AE4F",
+        "type": "ASTEROID",
+        "x": -704,
+        "y": -334,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PN39-XZ8Z",
+        "type": "ASTEROID",
+        "x": 649,
+        "y": -310,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PN39-BZ7X",
+        "type": "ASTEROID",
+        "x": 663,
+        "y": -302,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PN39-D13F",
+        "type": "ASTEROID",
+        "x": -696,
+        "y": 345,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PN39-DF6E",
+        "type": "ASTEROID",
+        "x": -608,
+        "y": -456,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PN39-CC5C",
+        "type": "ASTEROID",
+        "x": -387,
+        "y": -665,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PN39-D12E",
+        "type": "ASTEROID",
+        "x": -436,
+        "y": 648,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PN39-XE1D",
+        "type": "PLANET",
+        "x": -8,
+        "y": -15,
+        "orbitals": [
+          {
+            "symbol": "X1-PN39-ZF2B"
+          }
+        ]
+      },
+      {
+        "symbol": "X1-PN39-Z14E",
+        "type": "ASTEROID",
+        "x": -709,
+        "y": -279,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-PN39-ZF2B",
+        "type": "MOON",
+        "x": -8,
+        "y": -15,
+        "orbitals": [],
+        "orbits": "X1-PN39-XE1D"
+      },
+      {
+        "symbol": "X1-PN39-F11Z",
+        "type": "ASTEROID",
+        "x": 596,
+        "y": 429,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-KC97",
+    "sectorSymbol": "X1",
+    "type": "BLUE_STAR",
+    "x": 687,
+    "y": 2617,
+    "waypoints": [
+      {
+        "symbol": "X1-KC97-EA2B",
+        "type": "GAS_GIANT",
+        "x": -36,
+        "y": -15,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-KC97-FB4E",
+        "type": "ASTEROID",
+        "x": 681,
+        "y": -212,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-KC97-DX5D",
+        "type": "ASTEROID",
+        "x": 749,
+        "y": -75,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-KC97-D12D",
+        "type": "ASTEROID",
+        "x": 699,
+        "y": 195,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-KC97-AC8B",
+        "type": "ASTEROID",
+        "x": -509,
+        "y": 499,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-KC97-FF9X",
+        "type": "ASTEROID",
+        "x": -709,
+        "y": -301,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-KC97-AD3A",
+        "type": "ASTEROID",
+        "x": 764,
+        "y": -184,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-KC97-AB7D",
+        "type": "ASTEROID",
+        "x": -646,
+        "y": 422,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-KC97-X10F",
+        "type": "ASTEROID",
+        "x": -302,
+        "y": -726,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-KC97-A11D",
+        "type": "ASTEROID",
+        "x": 77,
+        "y": -755,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-KC97-EA1X",
+        "type": "PLANET",
+        "x": 10,
+        "y": 14,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-KC97-BE6A",
+        "type": "ASTEROID",
+        "x": 638,
+        "y": 419,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  },
+  {
+    "symbol": "X1-YN2",
+    "sectorSymbol": "X1",
+    "type": "BLUE_STAR",
+    "x": 4413,
+    "y": 3035,
+    "waypoints": [
+      {
+        "symbol": "X1-YN2-ZB2B",
+        "type": "PLANET",
+        "x": -30,
+        "y": 39,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YN2-ZD4E",
+        "type": "ASTEROID",
+        "x": -692,
+        "y": 172,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YN2-EB1A",
+        "type": "PLANET",
+        "x": 2,
+        "y": -17,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YN2-FE5B",
+        "type": "ASTEROID",
+        "x": -710,
+        "y": 194,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YN2-F10A",
+        "type": "ASTEROID",
+        "x": -127,
+        "y": 739,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YN2-ZZ6C",
+        "type": "ASTEROID",
+        "x": -486,
+        "y": -531,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YN2-FB8B",
+        "type": "ASTEROID",
+        "x": 289,
+        "y": -689,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YN2-ZC9A",
+        "type": "ASTEROID",
+        "x": 592,
+        "y": 419,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YN2-AE3C",
+        "type": "ASTEROID",
+        "x": 473,
+        "y": 616,
+        "orbitals": []
+      },
+      {
+        "symbol": "X1-YN2-AE7E",
+        "type": "ASTEROID",
+        "x": -384,
+        "y": -600,
+        "orbitals": []
+      }
+    ],
+    "factions": []
+  }
+]

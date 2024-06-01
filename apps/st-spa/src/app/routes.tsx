@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { ErrorPage } from './error-page'
 import { Home } from './home'
 import { Layout } from './layout'
+import { Systems } from './systems/list'
 
 export const routes = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ export const routes = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: 'systems',
+        element: <Systems />,
       },
     ],
   },
