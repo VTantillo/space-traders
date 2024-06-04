@@ -1,5 +1,9 @@
 # To do
 
+## Tasks
+
+- [ ] Add total pages to the logs
+
 ## Tutorial
 
 - [ ] View Space Traders status

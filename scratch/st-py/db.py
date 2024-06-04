@@ -1,13 +1,51 @@
+from psycopg.rows import class_row
 from psycopg.types.json import Jsonb
 from psycopg_pool import ConnectionPool
-from pydantic import PostgresDsn
+from pydantic import BaseModel, PostgresDsn
 
 from domain import System, Waypoint
+
+
+class NearestSystems(BaseModel):
+    symbol: str
+    system_type: str
+    x: int
+    y: int
+    distance: float
+    num_waypoints: int
 
 
 class SpaceTradersDb:
     def __init__(self, conn_string: PostgresDsn) -> None:
         self.db = ConnectionPool(conn_string.unicode_string())
+
+    def get_nearest_systems(self, system_symbol: str) -> list[NearestSystems]:
+        with self.db.connection() as conn:
+            with conn.cursor(row_factory=class_row(NearestSystems)) as cur:
+                results = cur.execute(
+                    """
+                    with
+                    current_system_coords as (
+                        select
+                            symbol,
+                            x,
+                            y
+                        from "system"
+                        where symbol = %(system_symbol)s
+                    )
+                    select
+                        s.symbol,
+                        s.type as system_type,
+                        s.x,
+                        s.y,
+                        |/( ( (s.x - cs.x) ^ 2 ) + ((s.y - cs.y) ^2) ) as distance,
+                        jsonb_array_length(s.waypoints) as num_waypoints
+                    from "system" s, current_system_coords cs
+                    order by distance;
+                    """,
+                    {"system_symbol": system_symbol},
+                ).fetchall()
+                return results
 
     def insert_systems(self, systems: list[System]):
         with self.db.connection() as conn:
