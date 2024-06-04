@@ -1,0 +1,34 @@
+[project]
+name = "vt-space-traders"
+description = "Python project to interact with the Space Traders API"
+version = "0.0.1"
+
+authors = [
+  { name = "Victor Tantillo", email = "v.tantillo3@gmail.com" }
+]
+
+classifiers = [
+  "Private :: Do Not Upload"
+]
+
+dependencies = [
+  "fastapi[all]",
+  "loguru",
+  "psycopg[binary,pool]",
+  "loguru",
+  "pydantic-settings",
+  "pyhumps",
+  "starlette-prometheus",
+  "python-dotenv",
+  "httpx",
+  "polars[all]"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "rich"
+]
+
+[tool.basedpyright]
+typeCheckingMode = "all"

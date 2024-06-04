@@ -2,21 +2,21 @@ version: '3.8'
 
 services:
   pg-db:
-    container_name: fairmate-db
+    container_name: space-traders-db
     image: postgres:bullseye
     ports:
       - 5432:5432
     environment:
       POSTGRES_PASSWORD: pass
-      POSTGRES_DB: fairmate
+      POSTGRES_DB: space-traders
     volumes:
-      - fairmate-db:/var/lib/postgresql/data
+      - space-traders-db:/var/lib/postgresql/data
     networks:
-      - fairmate-network
+      - space-traders-network
 
 volumes:
-  fairmate-db:
+  space-traders-db:
 
 networks:
-  fairmate-network:
-    name: fairmate-network
+  space-traders-network:
+    name: space-traders-network

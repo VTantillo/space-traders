@@ -1,4 +1,4 @@
-import { integer, pgEnum, pgTable, text } from 'drizzle-orm/pg-core'
+import { boolean, integer, pgEnum, pgTable, text } from 'drizzle-orm/pg-core'
 import { customJsonb } from './custom-cols'
 
 export const systemTypeEnum = pgEnum('system_type', [
@@ -31,12 +31,16 @@ export const waypointTypeEnum = pgEnum('waypoint_type', [
   'FUEL_STATION',
 ])
 
+type Symbol = {
+  symbol: string
+}
+
 type SystemWaypoint = {
   symbol: string
   type: string
   x: number
   y: number
-  orbital: Array<{ symbol: string }>
+  orbital: Array<Symbol>
   orbits?: string
 }
 export const dbSystem = pgTable('system', {
@@ -45,8 +49,38 @@ export const dbSystem = pgTable('system', {
   sector: text('sector').notNull(),
   x: integer('x').notNull(),
   y: integer('y').notNull(),
-  waypoints: customJsonb('wayponts').$type<SystemWaypoint[]>(),
-  factions: customJsonb('wayponts').$type<Array<{ symbol: string }>>(),
+  waypoints: customJsonb('waypoints').$type<SystemWaypoint[]>(),
+  factions: customJsonb('factions').$type<Array<Symbol>>(),
 })
 export type System = typeof dbSystem.$inferSelect
 export type NewSystem = typeof dbSystem.$inferInsert
+
+type WaypointTrait = {
+  symbol: string
+  name: string
+  description: string
+}
+
+type WaypointChart = {
+  submittedBy: string
+  submittedOn: string
+  waypointSymbol?: string
+}
+
+export const dbWaypoint = pgTable('waypoint', {
+  symbol: text('symbol').primaryKey().notNull(),
+  systemSymbol: text('system_symbol')
+    .references(() => dbSystem.symbol)
+    .notNull(),
+  type: waypointTypeEnum('type').notNull(),
+  x: integer('x').notNull(),
+  y: integer('y').notNull(),
+  orbitals: customJsonb('orbitals').$type<Array<Symbol>>(),
+  traits: customJsonb('traits').$type<Array<WaypointTrait>>(),
+  modifiers: customJsonb('modifiers'),
+  chart: customJsonb('chart').$type<WaypointChart>(),
+  faction: customJsonb('faction').$type<Symbol>(),
+  isUnderConstruction: boolean('is_under_construction').notNull(),
+})
+export type Waypoint = typeof dbWaypoint.$inferSelect
+export type NewWaypoint = typeof dbWaypoint.$inferInsert
