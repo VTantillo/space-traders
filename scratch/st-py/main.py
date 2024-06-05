@@ -1,38 +1,17 @@
-import polars as pl
-from pydantic import BaseModel, Field
+import json
 
+import httpx
 
-class Orbital(BaseModel):
-    symbol: str
-
-
-class Waypoint(BaseModel):
-    symbol: str
-    type: str
-    x: int
-    y: int
-    orbitals: list[Orbital]
-    orbits: str | None = None
-
-
-class Faction(BaseModel):
-    symbol: str
-
-
-class System(BaseModel):
-    symbol: str
-    sector_symbol: str = Field(alias="sectorSymbol")
-    system_type: str = Field(alias="type")
-    x: int
-    y: int
-    waypoints: list[Waypoint]
-    factions: list[Faction]
+from config import get_settings
 
 
 def main():
-    print("this is the main function")
-    df = pl.DataFrame()
-    print(df)
+    settings = get_settings()
+    headers = {"Authorization": f"Bearer {settings.api_token}"}
+    with httpx.Client(base_url=settings.base_url, headers=headers) as client:
+        res = client.get("/")
+        with open("./out/status.json", "w") as file:
+            json.dump(res.json(), file, indent=2)
 
 
 if __name__ == "__main__":

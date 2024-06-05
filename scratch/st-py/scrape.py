@@ -4,11 +4,21 @@ from datetime import datetime
 
 import httpx
 from loguru import logger
+from tenacity import (
+    retry,
+    retry_if_exception_type,
+    stop_after_attempt,
+    wait_fixed,
+)
 
 from config import get_settings
 from constants import api_token, base_url
 from db import SpaceTradersDb
 from domain import SystemsRes, Waypoint, WaypointsRes
+
+# def is_retryable_status_code(response: httpx.Response):
+#     return response.status_code in [500, 502, 503, 504]
+
 
 headers = {"Authorization": f"Bearer {api_token}"}
 
@@ -23,6 +33,11 @@ def reset_db(db: SpaceTradersDb):
     logger.info("finished resetting db")
 
 
+@retry(
+    retry=(retry_if_exception_type((httpx.TimeoutException, httpx.ConnectError))),
+    stop=stop_after_attempt(3),
+    wait=wait_fixed(5),
+)
 def get_waypoints(system: str, page: int) -> WaypointsRes:
     with httpx.Client(base_url=base_url, headers=headers) as client:
         req = client.get(
@@ -31,6 +46,11 @@ def get_waypoints(system: str, page: int) -> WaypointsRes:
         return WaypointsRes.model_validate(req.json())
 
 
+@retry(
+    retry=(retry_if_exception_type((httpx.TimeoutException, httpx.ConnectError))),
+    stop=stop_after_attempt(3),
+    wait=wait_fixed(5),
+)
 def get_systems(page: int) -> SystemsRes:
     with httpx.Client(base_url=base_url, headers=headers) as client:
         req = client.get("/systems", params={"page": page, "limit": limit})
@@ -67,24 +87,23 @@ def scrape_waypoints(db: SpaceTradersDb):
     total_waypoints = 0
     systems_scraped = 0
 
+    calls = 0
+    waypoint_calls = 4450
+
     logger.info("Starting to scrape waypoints")
 
-    systems = db.get_nearest_systems(home_system)
-    # TODO: Track the number of api calls vs the aproximage number
-    # TODO: Filter out the systems with no waypoints
-    # TODO: Track the number of calls made to each endpoint
+    systems = db.get_scrape_systems(home_system)
 
     logger.info("Scraping waypoints for {} systems", len(systems))
 
     for system in systems:
         logger.info(
-            "Getting waypoints for system {} ({}, {})",
+            "System: {}, Distance: {}, Waypoints: {}, Pages: {}",
             system.symbol,
-            system.x,
-            system.y,
+            round(system.distance, 2),
+            system.num_waypoints,
+            math.ceil(system.num_waypoints / 20),
         )
-        logger.info("Distance from home: {} units", round(system.distance, 2))
-        logger.info("{} waypoints", system.num_waypoints)
 
         waypoints: list[Waypoint] = []
         page = 1
@@ -93,11 +112,21 @@ def scrape_waypoints(db: SpaceTradersDb):
             res = get_waypoints(system.symbol, page)
 
             if len(res.data) == 0:
-                logger.info("No waypoints found on page {}", page)
+                percentage = round((waypoint_calls - calls) / waypoint_calls, 2)
+                cur = datetime.now()
+                runtime = cur - start
+                logger.info(
+                    "STATUS: {} of {} ({}%) waypoint calls, {} seconds elapsed",
+                    calls,
+                    waypoint_calls,
+                    percentage,
+                    round(runtime.total_seconds(), 2),
+                )
                 break
 
             waypoints.extend(res.data)
             page = page + 1
+            calls = calls + 1
             time.sleep(0.75)
 
         db.insert_waypoints(waypoints)

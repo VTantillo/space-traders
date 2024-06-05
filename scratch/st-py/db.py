@@ -47,6 +47,35 @@ class SpaceTradersDb:
                 ).fetchall()
                 return results
 
+    def get_scrape_systems(self, system_symbol: str) -> list[NearestSystems]:
+        with self.db.connection() as conn:
+            with conn.cursor(row_factory=class_row(NearestSystems)) as cur:
+                results = cur.execute(
+                    """
+                    with
+                    current_system_coords as (
+                        select
+                            symbol,
+                            x,
+                            y
+                        from "system"
+                        where symbol = %(system_symbol)s
+                    )
+                    select
+                        s.symbol,
+                        s.type as system_type,
+                        s.x,
+                        s.y,
+                        |/( ( (s.x - cs.x) ^ 2 ) + ((s.y - cs.y) ^2) ) as distance,
+                        jsonb_array_length(s.waypoints) as num_waypoints
+                    from "system" s, current_system_coords cs
+                        where jsonb_array_length(s.waypoints) > 0
+                    order by distance;
+                    """,
+                    {"system_symbol": system_symbol},
+                ).fetchall()
+                return results
+
     def insert_systems(self, systems: list[System]):
         with self.db.connection() as conn:
             with conn.cursor() as cur:

@@ -13,5 +13,5 @@ class SpaceTradersSettings(BaseSettings):
 
 
 @lru_cache()
-def get_settings():
+def get_settings() -> SpaceTradersSettings:
     return SpaceTradersSettings.model_validate({})
