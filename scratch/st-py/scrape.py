@@ -34,7 +34,7 @@ def reset_db(db: SpaceTradersDb):
 
 
 @retry(
-    retry=(retry_if_exception_type((httpx.TimeoutException, httpx.ConnectError))),
+    retry=(retry_if_exception_type(BaseException)),
     stop=stop_after_attempt(3),
     wait=wait_fixed(5),
 )
@@ -47,7 +47,7 @@ def get_waypoints(system: str, page: int) -> WaypointsRes:
 
 
 @retry(
-    retry=(retry_if_exception_type((httpx.TimeoutException, httpx.ConnectError))),
+    retry=(retry_if_exception_type(BaseException)),
     stop=stop_after_attempt(3),
     wait=wait_fixed(5),
 )
