@@ -69,7 +69,8 @@ class SpaceTradersDb:
                         |/( ( (s.x - cs.x) ^ 2 ) + ((s.y - cs.y) ^2) ) as distance,
                         jsonb_array_length(s.waypoints) as num_waypoints
                     from "system" s, current_system_coords cs
-                        where jsonb_array_length(s.waypoints) > 0
+                    where jsonb_array_length(s.waypoints) > 0
+                        and |/( ( (s.x - cs.x) ^ 2 ) + ((s.y - cs.y) ^2) ) > 16408
                     order by distance;
                     """,
                     {"system_symbol": system_symbol},

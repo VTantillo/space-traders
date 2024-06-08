@@ -81,3 +81,5 @@
 - Good way to make money is by finding good trade routes between markets with
   compatible imports and exports.
 - Apparently prices can fluctuate based on the number of agents selling stuff
+
+X1-CM83

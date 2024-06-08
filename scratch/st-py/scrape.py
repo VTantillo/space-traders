@@ -6,7 +6,6 @@ import httpx
 from loguru import logger
 from tenacity import (
     retry,
-    retry_if_exception_type,
     stop_after_attempt,
     wait_fixed,
 )
@@ -15,10 +14,6 @@ from config import get_settings
 from constants import api_token, base_url
 from db import SpaceTradersDb
 from domain import SystemsRes, Waypoint, WaypointsRes
-
-# def is_retryable_status_code(response: httpx.Response):
-#     return response.status_code in [500, 502, 503, 504]
-
 
 headers = {"Authorization": f"Bearer {api_token}"}
 
@@ -34,8 +29,7 @@ def reset_db(db: SpaceTradersDb):
 
 
 @retry(
-    retry=(retry_if_exception_type(BaseException)),
-    stop=stop_after_attempt(3),
+    stop=stop_after_attempt(5),
     wait=wait_fixed(5),
 )
 def get_waypoints(system: str, page: int) -> WaypointsRes:
@@ -47,8 +41,7 @@ def get_waypoints(system: str, page: int) -> WaypointsRes:
 
 
 @retry(
-    retry=(retry_if_exception_type(BaseException)),
-    stop=stop_after_attempt(3),
+    stop=stop_after_attempt(5),
     wait=wait_fixed(5),
 )
 def get_systems(page: int) -> SystemsRes:
@@ -88,13 +81,13 @@ def scrape_waypoints(db: SpaceTradersDb):
     systems_scraped = 0
 
     calls = 0
-    waypoint_calls = 4450
 
     logger.info("Starting to scrape waypoints")
 
     systems = db.get_scrape_systems(home_system)
+    num_systems = len(systems)
 
-    logger.info("Scraping waypoints for {} systems", len(systems))
+    logger.info("Scraping waypoints for {} systems", num_systems)
 
     for system in systems:
         logger.info(
@@ -112,13 +105,13 @@ def scrape_waypoints(db: SpaceTradersDb):
             res = get_waypoints(system.symbol, page)
 
             if len(res.data) == 0:
-                percentage = round((waypoint_calls - calls) / waypoint_calls, 2)
+                percentage = round((systems_scraped / num_systems) * 100, 2)
                 cur = datetime.now()
                 runtime = cur - start
                 logger.info(
-                    "STATUS: {} of {} ({}%) waypoint calls, {} seconds elapsed",
+                    "STATUS: {} of {} ({}%) systems scraped, {} seconds elapsed",
                     calls,
-                    waypoint_calls,
+                    num_systems,
                     percentage,
                     round(runtime.total_seconds(), 2),
                 )
@@ -133,14 +126,15 @@ def scrape_waypoints(db: SpaceTradersDb):
         logger.info("Inserted {} waypoints", len(waypoints))
         total_waypoints = total_waypoints + len(waypoints)
         systems_scraped = systems_scraped + 1
-        logger.info("Scraped {} of {} systems", systems_scraped, len(systems))
+        # logger.info("Scraped {} of {} systems", systems_scraped, len(systems))
 
     end = datetime.now()
     elapsed = end - start
     logger.info(
-        "Scraped {} waypoints after {} seconds",
+        "Scraped {} waypoints after {} seconds, {} api calls",
         total_waypoints,
         elapsed.total_seconds(),
+        calls,
     )
 
 
