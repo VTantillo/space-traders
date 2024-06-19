@@ -1,11 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+import { Card, CardFooter } from '@/components/ui/card'
 import {
   Table,
   TableBody,
@@ -17,6 +10,7 @@ import {
 import { shipQueries } from '@/lib/queries'
 import { cn } from '@/lib/utils'
 import { useQuery } from '@tanstack/react-query'
+import { Link } from 'react-router-dom'
 
 export function Fleet() {
   const page = 1
@@ -37,12 +31,15 @@ export function Fleet() {
   const meta = query.data.meta
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Fleet</CardTitle>
-        <CardDescription>Ships currently in your fleet</CardDescription>
-      </CardHeader>
-      <CardContent>
+    <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+      <div className="flex flex-col">
+        <h1 className="text-lg font-semibold md:text-2xl">Fleet</h1>
+        <p className="text-sm text-muted-foreground">
+          Ships currently in your fleet
+        </p>
+      </div>
+
+      <Card>
         <Table>
           <TableHeader>
             <TableRow>
@@ -66,7 +63,9 @@ export function Fleet() {
           <TableBody>
             {ships.map((s) => (
               <TableRow key={s.symbol}>
-                <TableCell>{s.registration.name}</TableCell>
+                <TableCell>
+                  <Link to={`/fleet/${s.symbol}`}>{s.registration.name}</Link>
+                </TableCell>
                 <TableCell>{s.registration.role}</TableCell>
                 <TableCell>{s.frame.name}</TableCell>
                 <TableCell>{s.nav.status}</TableCell>
@@ -149,15 +148,15 @@ export function Fleet() {
             ))}
           </TableBody>
         </Table>
-      </CardContent>
 
-      <CardFooter>
-        <div className="text-xs text-muted-foreground">
-          Showing page <strong>{page}</strong> of{' '}
-          <strong>{Math.ceil(meta.total / limit)}</strong> (
-          <strong>{meta.total}</strong> total ships)
-        </div>
-      </CardFooter>
-    </Card>
+        <CardFooter>
+          <div className="text-xs text-muted-foreground">
+            Showing page <strong>{page}</strong> of{' '}
+            <strong>{Math.ceil(meta.total / limit)}</strong> (
+            <strong>{meta.total}</strong> total ships)
+          </div>
+        </CardFooter>
+      </Card>
+    </main>
   )
 }

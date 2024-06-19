@@ -35,8 +35,6 @@ export function Systems() {
   const systems = query.data.data
   const meta = query.data.meta
 
-  console.log(systems)
-
   return (
     <Card>
       <CardHeader>

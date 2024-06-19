@@ -1,4 +1,4 @@
-import { queryOptions } from '@tanstack/react-query'
+import { queryOptions, skipToken } from '@tanstack/react-query'
 import {
   getAgent,
   GetAgentData,
@@ -60,57 +60,67 @@ export const meQueries = {
       queryKey: [...meQueries.all(), 'agent'],
       queryFn: () => getMyAgent(),
     }),
-  allContracts: () => [...meQueries.all(), 'contract'],
-  contracts: (data: GetContractsData) =>
+  // TODO: Eventually put getting the other registered ageints here
+}
+
+export const contractQueries = {
+  all: () => ['contracts'],
+  lists: () => [...contractQueries.all(), 'list'],
+  list: (data: GetContractsData) =>
     queryOptions({
-      queryKey: [...meQueries.allContracts(), data],
+      queryKey: [...contractQueries.lists(), data],
       queryFn: () => getContracts(data),
     }),
-  contract: (data: GetContractData) =>
+  details: () => [...contractQueries.all(), 'detail'],
+  detail: (data: GetContractData) =>
     queryOptions({
-      queryKey: [...meQueries.allContracts(), data],
+      queryKey: [...contractQueries.details(), data],
       queryFn: () => getContract(data),
     }),
-  allShips: () => [...meQueries.all(), 'ship'],
-  ships: (data: GetMyShipsData) =>
+}
+
+export const shipQueries = {
+  all: () => ['ships'],
+  lists: () => [...shipQueries.all(), 'list'],
+  list: (data: GetMyShipsData) =>
     queryOptions({
-      queryKey: [...meQueries.allShips(), data],
+      queryKey: [...shipQueries.lists(), data],
       queryFn: () => getMyShips(data),
     }),
-  ship: (data: GetMyShipData) =>
+  details: () => [...shipQueries.all(), 'detail'],
+  detail: (data: GetMyShipData | undefined) =>
     queryOptions({
-      queryKey: [...meQueries.allShips(), data],
-      queryFn: () => getMyShip(data),
-    }),
-  allShipCargo: () => [...meQueries.allShips(), 'cargo'],
-  shipCargo: (data: GetMyShipCargoData) =>
-    queryOptions({
-      queryKey: [...meQueries.allShipCargo(), data],
-      queryFn: () => getMyShipCargo(data),
+      queryKey: [...shipQueries.details(), data],
+      queryFn: data ? () => getMyShip(data) : skipToken,
     }),
   cooldown: (data: GetShipCooldownData) =>
     queryOptions({
-      queryKey: [...meQueries.allShips(), 'cooldown', data],
+      queryKey: [...shipQueries.details(), 'cooldown', data],
       queryFn: () => getShipCooldown(data),
-    }),
-  shipNav: (data: GetShipNavData) =>
-    queryOptions({
-      queryKey: [...meQueries.allShips(), 'nav', data],
-      queryFn: () => getShipNav(data),
     }),
   mounts: (data: GetMountsData) =>
     queryOptions({
-      queryKey: [...meQueries.allShips(), 'mounts', data],
+      queryKey: [...shipQueries.details(), 'mounts', data],
       queryFn: () => getMounts(data),
     }),
-  scrapShip: (data: GetScrapShipData) =>
+  cargo: (data: GetMyShipCargoData) =>
     queryOptions({
-      queryKey: [...meQueries.allShips(), 'scrap', data],
+      queryKey: [...shipQueries.details(), 'cargo', data],
+      queryFn: () => getMyShipCargo(data),
+    }),
+  nav: (data: GetShipNavData) =>
+    queryOptions({
+      queryKey: [...shipQueries.details(), 'nav', data],
+      queryFn: () => getShipNav(data),
+    }),
+  scrapValue: (data: GetScrapShipData) =>
+    queryOptions({
+      queryKey: [...shipQueries.details(), 'scrap', data],
       queryFn: () => getScrapShip(data),
     }),
-  repairShip: (data: GetRepairShipData) =>
+  repairCost: (data: GetRepairShipData) =>
     queryOptions({
-      queryKey: [...meQueries.allShips(), 'repair', data],
+      queryKey: [...shipQueries.details(), 'repair', data],
       queryFn: () => getRepairShip(data),
     }),
 }

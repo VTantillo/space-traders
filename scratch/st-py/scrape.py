@@ -11,14 +11,15 @@ from tenacity import (
 )
 
 from config import get_settings
-from constants import api_token, base_url
 from db import SpaceTradersDb
 from domain import SystemsRes, Waypoint, WaypointsRes
 
-headers = {"Authorization": f"Bearer {api_token}"}
+settings = get_settings()
+
+headers = {"Authorization": f"Bearer {settings.api_token}"}
 
 limit = 20
-home_system = "X1-SD16"
+home_system = "X1-NH65"
 
 
 def reset_db(db: SpaceTradersDb):
@@ -33,11 +34,14 @@ def reset_db(db: SpaceTradersDb):
     wait=wait_fixed(5),
 )
 def get_waypoints(system: str, page: int) -> WaypointsRes:
-    with httpx.Client(base_url=base_url, headers=headers) as client:
+    with httpx.Client(base_url=settings.base_url, headers=headers) as client:
         req = client.get(
             f"/systems/{system}/waypoints", params={"page": page, "limit": limit}
         )
-        return WaypointsRes.model_validate(req.json())
+        data = req.json()  # pyright: ignore[reportAny]
+        if "error" in data:
+            logger.error("There was an error: {}", data["error"]["message"])
+        return WaypointsRes.model_validate(data)
 
 
 @retry(
@@ -45,10 +49,14 @@ def get_waypoints(system: str, page: int) -> WaypointsRes:
     wait=wait_fixed(5),
 )
 def get_systems(page: int) -> SystemsRes:
-    with httpx.Client(base_url=base_url, headers=headers) as client:
+    with httpx.Client(base_url=settings.base_url, headers=headers) as client:
         req = client.get("/systems", params={"page": page, "limit": limit})
 
-        return SystemsRes.model_validate(req.json())
+        data = req.json()  # pyright: ignore[reportAny]
+        if "error" in data:
+            logger.error("There was an error: {}", data["error"]["message"])
+
+        return SystemsRes.model_validate(data)
 
 
 def scrape_systems(db: SpaceTradersDb):
@@ -110,7 +118,7 @@ def scrape_waypoints(db: SpaceTradersDb):
                 runtime = cur - start
                 logger.info(
                     "STATUS: {} of {} ({}%) systems scraped, {} seconds elapsed",
-                    calls,
+                    systems_scraped,
                     num_systems,
                     percentage,
                     round(runtime.total_seconds(), 2),
@@ -126,7 +134,6 @@ def scrape_waypoints(db: SpaceTradersDb):
         logger.info("Inserted {} waypoints", len(waypoints))
         total_waypoints = total_waypoints + len(waypoints)
         systems_scraped = systems_scraped + 1
-        # logger.info("Scraped {} of {} systems", systems_scraped, len(systems))
 
     end = datetime.now()
     elapsed = end - start
