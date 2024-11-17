@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
+    "prettier"
+  ],
+  "plugins": ["tailwindcss"],
+  "rules": {
+    "react-refresh/only-export-components": "off"
+  },
+  "settings": {
+    "tailwindcss": {
+      "callees": ["cn", "cva", "clsx", "className"],
+      "config": "tailwind.config.ts"
+    }
+  }
+}

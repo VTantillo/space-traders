@@ -723,7 +723,6 @@ export type ShipConditionEvent = {
   description: string
 }
 
-// @ts-ignore
 export type symbol =
   | 'REACTOR_OVERLOAD'
   | 'ENERGY_SPIKE_FROM_MINERAL'
@@ -1912,8 +1911,10 @@ export type GetStatusResponse = {
   }>
 }
 
+export type GetStatusError = unknown
+
 export type RegisterData = {
-  requestBody?: {
+  body?: {
     faction: FactionSymbol
     /**
      * Your desired agent symbol. This will be a unique name used to represent your agent, and will be the prefix for your ships.
@@ -1939,15 +1940,19 @@ export type RegisterResponse = {
   }
 }
 
+export type RegisterError = unknown
+
 export type GetSystemsData = {
-  /**
-   * How many entries to return per page
-   */
-  limit?: number
-  /**
-   * What entry offset to request
-   */
-  page?: number
+  query?: {
+    /**
+     * How many entries to return per page
+     */
+    limit?: number
+    /**
+     * What entry offset to request
+     */
+    page?: number
+  }
 }
 
 export type GetSystemsResponse = {
@@ -1955,38 +1960,48 @@ export type GetSystemsResponse = {
   meta: Meta
 }
 
+export type GetSystemsError = unknown
+
 export type GetSystemData = {
-  /**
-   * The system symbol
-   */
-  systemSymbol: string
+  path: {
+    /**
+     * The system symbol
+     */
+    systemSymbol: string
+  }
 }
 
 export type GetSystemResponse = {
   data: System
 }
 
+export type GetSystemError = unknown
+
 export type GetSystemWaypointsData = {
-  /**
-   * How many entries to return per page
-   */
-  limit?: number
-  /**
-   * What entry offset to request
-   */
-  page?: number
-  /**
-   * The system symbol
-   */
-  systemSymbol: string
-  /**
-   * Filter waypoints by one or more traits.
-   */
-  traits?: WaypointTraitSymbol | Array<WaypointTraitSymbol>
-  /**
-   * Filter waypoints by type.
-   */
-  type?: WaypointType
+  path: {
+    /**
+     * The system symbol
+     */
+    systemSymbol: string
+  }
+  query?: {
+    /**
+     * How many entries to return per page
+     */
+    limit?: number
+    /**
+     * What entry offset to request
+     */
+    page?: number
+    /**
+     * Filter waypoints by one or more traits.
+     */
+    traits?: WaypointTraitSymbol | Array<WaypointTraitSymbol>
+    /**
+     * Filter waypoints by type.
+     */
+    type?: WaypointType
+  }
 }
 
 export type GetSystemWaypointsResponse = {
@@ -1994,83 +2009,105 @@ export type GetSystemWaypointsResponse = {
   meta: Meta
 }
 
+export type GetSystemWaypointsError = unknown
+
 export type GetWaypointData = {
-  /**
-   * The system symbol
-   */
-  systemSymbol: string
-  /**
-   * The waypoint symbol
-   */
-  waypointSymbol: string
+  path: {
+    /**
+     * The system symbol
+     */
+    systemSymbol: string
+    /**
+     * The waypoint symbol
+     */
+    waypointSymbol: string
+  }
 }
 
 export type GetWaypointResponse = {
   data: Waypoint
 }
 
+export type GetWaypointError = unknown
+
 export type GetMarketData = {
-  /**
-   * The system symbol
-   */
-  systemSymbol: string
-  /**
-   * The waypoint symbol
-   */
-  waypointSymbol: string
+  path: {
+    /**
+     * The system symbol
+     */
+    systemSymbol: string
+    /**
+     * The waypoint symbol
+     */
+    waypointSymbol: string
+  }
 }
 
 export type GetMarketResponse = {
   data: Market
 }
 
+export type GetMarketError = unknown
+
 export type GetShipyardData = {
-  /**
-   * The system symbol
-   */
-  systemSymbol: string
-  /**
-   * The waypoint symbol
-   */
-  waypointSymbol: string
+  path: {
+    /**
+     * The system symbol
+     */
+    systemSymbol: string
+    /**
+     * The waypoint symbol
+     */
+    waypointSymbol: string
+  }
 }
 
 export type GetShipyardResponse = {
   data: Shipyard
 }
 
+export type GetShipyardError = unknown
+
 export type GetJumpGateData = {
-  /**
-   * The system symbol
-   */
-  systemSymbol: string
-  /**
-   * The waypoint symbol
-   */
-  waypointSymbol: string
+  path: {
+    /**
+     * The system symbol
+     */
+    systemSymbol: string
+    /**
+     * The waypoint symbol
+     */
+    waypointSymbol: string
+  }
 }
 
 export type GetJumpGateResponse = {
   data: JumpGate
 }
 
+export type GetJumpGateError = unknown
+
 export type GetConstructionData = {
-  /**
-   * The system symbol
-   */
-  systemSymbol: string
-  /**
-   * The waypoint symbol
-   */
-  waypointSymbol: string
+  path: {
+    /**
+     * The system symbol
+     */
+    systemSymbol: string
+    /**
+     * The waypoint symbol
+     */
+    waypointSymbol: string
+  }
 }
 
 export type GetConstructionResponse = {
   data: Construction
 }
 
+export type GetConstructionError = unknown
+
 export type SupplyConstructionData = {
-  requestBody?: {
+  body?: {
     /**
      * Symbol of the ship to use.
      */
@@ -2084,14 +2121,16 @@ export type SupplyConstructionData = {
      */
     units: number
   }
-  /**
-   * The system symbol
-   */
-  systemSymbol: string
-  /**
-   * The waypoint symbol
-   */
-  waypointSymbol: string
+  path: {
+    /**
+     * The system symbol
+     */
+    systemSymbol: string
+    /**
+     * The waypoint symbol
+     */
+    waypointSymbol: string
+  }
 }
 
 export type SupplyConstructionResponse = {
@@ -2101,15 +2140,19 @@ export type SupplyConstructionResponse = {
   }
 }
 
+export type SupplyConstructionError = unknown
+
 export type GetFactionsData = {
-  /**
-   * How many entries to return per page
-   */
-  limit?: number
-  /**
-   * What entry offset to request
-   */
-  page?: number
+  query?: {
+    /**
+     * How many entries to return per page
+     */
+    limit?: number
+    /**
+     * What entry offset to request
+     */
+    page?: number
+  }
 }
 
 export type GetFactionsResponse = {
@@ -2117,30 +2160,40 @@ export type GetFactionsResponse = {
   meta: Meta
 }
 
+export type GetFactionsError = unknown
+
 export type GetFactionData = {
-  /**
-   * The faction symbol
-   */
-  factionSymbol: string
+  path: {
+    /**
+     * The faction symbol
+     */
+    factionSymbol: string
+  }
 }
 
 export type GetFactionResponse = {
   data: Faction
 }
 
+export type GetFactionError = unknown
+
 export type GetMyAgentResponse = {
   data: Agent
 }
 
+export type GetMyAgentError = unknown
+
 export type GetAgentsData = {
-  /**
-   * How many entries to return per page
-   */
-  limit?: number
-  /**
-   * What entry offset to request
-   */
-  page?: number
+  query?: {
+    /**
+     * How many entries to return per page
+     */
+    limit?: number
+    /**
+     * What entry offset to request
+     */
+    page?: number
+  }
 }
 
 export type GetAgentsResponse = {
@@ -2148,26 +2201,34 @@ export type GetAgentsResponse = {
   meta: Meta
 }
 
+export type GetAgentsError = unknown
+
 export type GetAgentData = {
-  /**
-   * The agent symbol
-   */
-  agentSymbol: string
+  path: {
+    /**
+     * The agent symbol
+     */
+    agentSymbol: string
+  }
 }
 
 export type GetAgentResponse = {
   data: Agent
 }
 
+export type GetAgentError = unknown
+
 export type GetContractsData = {
-  /**
-   * How many entries to return per page
-   */
-  limit?: number
-  /**
-   * What entry offset to request
-   */
-  page?: number
+  query?: {
+    /**
+     * How many entries to return per page
+     */
+    limit?: number
+    /**
+     * What entry offset to request
+     */
+    page?: number
+  }
 }
 
 export type GetContractsResponse = {
@@ -2175,22 +2236,30 @@ export type GetContractsResponse = {
   meta: Meta
 }
 
+export type GetContractsError = unknown
+
 export type GetContractData = {
-  /**
-   * The contract ID
-   */
-  contractId: string
+  path: {
+    /**
+     * The contract ID
+     */
+    contractId: string
+  }
 }
 
 export type GetContractResponse = {
   data: Contract
 }
 
+export type GetContractError = unknown
+
 export type AcceptContractData = {
-  /**
-   * The contract ID to accept.
-   */
-  contractId: string
+  path: {
+    /**
+     * The contract ID to accept.
+     */
+    contractId: string
+  }
 }
 
 export type AcceptContractResponse = {
@@ -2200,12 +2269,10 @@ export type AcceptContractResponse = {
   }
 }
 
+export type AcceptContractError = unknown
+
 export type DeliverContractData = {
-  /**
-   * The ID of the contract.
-   */
-  contractId: string
-  requestBody?: {
+  body?: {
     /**
      * Symbol of a ship located in the destination to deliver a contract and that has a good to deliver in its cargo.
      */
@@ -2219,6 +2286,12 @@ export type DeliverContractData = {
      */
     units: number
   }
+  path: {
+    /**
+     * The ID of the contract.
+     */
+    contractId: string
+  }
 }
 
 export type DeliverContractResponse = {
@@ -2228,11 +2301,15 @@ export type DeliverContractResponse = {
   }
 }
 
+export type DeliverContractError = unknown
+
 export type FulfillContractData = {
-  /**
-   * The ID of the contract to fulfill.
-   */
-  contractId: string
+  path: {
+    /**
+     * The ID of the contract to fulfill.
+     */
+    contractId: string
+  }
 }
 
 export type FulfillContractResponse = {
@@ -2242,15 +2319,19 @@ export type FulfillContractResponse = {
   }
 }
 
+export type FulfillContractError = unknown
+
 export type GetMyShipsData = {
-  /**
-   * How many entries to return per page
-   */
-  limit?: number
-  /**
-   * What entry offset to request
-   */
-  page?: number
+  query?: {
+    /**
+     * How many entries to return per page
+     */
+    limit?: number
+    /**
+     * What entry offset to request
+     */
+    page?: number
+  }
 }
 
 export type GetMyShipsResponse = {
@@ -2258,8 +2339,10 @@ export type GetMyShipsResponse = {
   meta: Meta
 }
 
+export type GetMyShipsError = unknown
+
 export type PurchaseShipData = {
-  requestBody?: {
+  body?: {
     shipType: ShipType
     /**
      * The symbol of the waypoint you want to purchase the ship at.
@@ -2276,33 +2359,45 @@ export type PurchaseShipResponse = {
   }
 }
 
+export type PurchaseShipError = unknown
+
 export type GetMyShipData = {
-  /**
-   * The symbol of the ship.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The symbol of the ship.
+     */
+    shipSymbol: string
+  }
 }
 
 export type GetMyShipResponse = {
   data: Ship
 }
 
+export type GetMyShipError = unknown
+
 export type GetMyShipCargoData = {
-  /**
-   * The symbol of the ship.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The symbol of the ship.
+     */
+    shipSymbol: string
+  }
 }
 
 export type GetMyShipCargoResponse = {
   data: ShipCargo
 }
 
+export type GetMyShipCargoError = unknown
+
 export type OrbitShipData = {
-  /**
-   * The symbol of the ship.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The symbol of the ship.
+     */
+    shipSymbol: string
+  }
 }
 
 export type OrbitShipResponse = {
@@ -2311,8 +2406,10 @@ export type OrbitShipResponse = {
   }
 }
 
+export type OrbitShipError = unknown
+
 export type ShipRefineData = {
-  requestBody?: {
+  body?: {
     /**
      * The type of good to produce out of the refining process.
      */
@@ -2327,10 +2424,12 @@ export type ShipRefineData = {
       | 'MERITIUM'
       | 'FUEL'
   }
-  /**
-   * The symbol of the ship.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The symbol of the ship.
+     */
+    shipSymbol: string
+  }
 }
 
 export type ShipRefineResponse = {
@@ -2366,11 +2465,15 @@ export type ShipRefineResponse = {
   }
 }
 
+export type ShipRefineError = unknown
+
 export type CreateChartData = {
-  /**
-   * The symbol of the ship.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The symbol of the ship.
+     */
+    shipSymbol: string
+  }
 }
 
 export type CreateChartResponse = {
@@ -2380,22 +2483,30 @@ export type CreateChartResponse = {
   }
 }
 
+export type CreateChartError = unknown
+
 export type GetShipCooldownData = {
-  /**
-   * The symbol of the ship.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The symbol of the ship.
+     */
+    shipSymbol: string
+  }
 }
 
 export type GetShipCooldownResponse = {
   data: Cooldown
 } | void
 
+export type GetShipCooldownError = unknown
+
 export type DockShipData = {
-  /**
-   * The symbol of the ship.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The symbol of the ship.
+     */
+    shipSymbol: string
+  }
 }
 
 export type DockShipResponse = {
@@ -2404,11 +2515,15 @@ export type DockShipResponse = {
   }
 }
 
+export type DockShipError = unknown
+
 export type CreateSurveyData = {
-  /**
-   * The symbol of the ship.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The symbol of the ship.
+     */
+    shipSymbol: string
+  }
 }
 
 export type CreateSurveyResponse = {
@@ -2421,17 +2536,21 @@ export type CreateSurveyResponse = {
   }
 }
 
+export type CreateSurveyError = unknown
+
 export type ExtractResourcesData = {
-  requestBody?: {
+  body?: {
     /**
      * @deprecated
      */
     survey?: Survey
   }
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type ExtractResourcesResponse = {
@@ -2443,11 +2562,15 @@ export type ExtractResourcesResponse = {
   }
 }
 
+export type ExtractResourcesError = unknown
+
 export type SiphonResourcesData = {
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type SiphonResourcesResponse = {
@@ -2459,12 +2582,16 @@ export type SiphonResourcesResponse = {
   }
 }
 
+export type SiphonResourcesError = unknown
+
 export type ExtractResourcesWithSurveyData = {
-  requestBody?: Survey
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  body?: Survey
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type ExtractResourcesWithSurveyResponse = {
@@ -2476,18 +2603,22 @@ export type ExtractResourcesWithSurveyResponse = {
   }
 }
 
+export type ExtractResourcesWithSurveyError = unknown
+
 export type JettisonData = {
-  requestBody?: {
+  body?: {
     symbol: TradeSymbol
     /**
      * Amount of units to jettison of this good.
      */
     units: number
   }
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type JettisonResponse = {
@@ -2496,17 +2627,21 @@ export type JettisonResponse = {
   }
 }
 
+export type JettisonError = unknown
+
 export type JumpShipData = {
-  requestBody?: {
+  body?: {
     /**
      * The symbol of the waypoint to jump to. The destination must be a connected waypoint.
      */
     waypointSymbol: string
   }
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type JumpShipResponse = {
@@ -2518,17 +2653,21 @@ export type JumpShipResponse = {
   }
 }
 
+export type JumpShipError = unknown
+
 export type NavigateShipData = {
-  requestBody?: {
+  body?: {
     /**
      * The target destination.
      */
     waypointSymbol: string
   }
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type NavigateShipResponse = {
@@ -2539,42 +2678,54 @@ export type NavigateShipResponse = {
   }
 }
 
+export type NavigateShipError = unknown
+
 export type PatchShipNavData = {
-  requestBody?: {
+  body?: {
     flightMode?: ShipNavFlightMode
   }
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type PatchShipNavResponse = {
   data: ShipNav
 }
 
+export type PatchShipNavError = unknown
+
 export type GetShipNavData = {
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type GetShipNavResponse = {
   data: ShipNav
 }
 
+export type GetShipNavError = unknown
+
 export type WarpShipData = {
-  requestBody?: {
+  body?: {
     /**
      * The target destination.
      */
     waypointSymbol: string
   }
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type WarpShipResponse = {
@@ -2584,18 +2735,22 @@ export type WarpShipResponse = {
   }
 }
 
+export type WarpShipError = unknown
+
 export type SellCargoData = {
-  requestBody?: {
+  body?: {
     symbol: TradeSymbol
     /**
      * Amounts of units to sell of the selected good.
      */
     units: number
   }
-  /**
-   * Symbol of a ship.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * Symbol of a ship.
+     */
+    shipSymbol: string
+  }
 }
 
 export type SellCargoResponse = {
@@ -2606,11 +2761,15 @@ export type SellCargoResponse = {
   }
 }
 
+export type SellCargoError = unknown
+
 export type CreateShipSystemScanData = {
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type CreateShipSystemScanResponse = {
@@ -2623,11 +2782,15 @@ export type CreateShipSystemScanResponse = {
   }
 }
 
+export type CreateShipSystemScanError = unknown
+
 export type CreateShipWaypointScanData = {
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type CreateShipWaypointScanResponse = {
@@ -2640,11 +2803,15 @@ export type CreateShipWaypointScanResponse = {
   }
 }
 
+export type CreateShipWaypointScanError = unknown
+
 export type CreateShipShipScanData = {
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type CreateShipShipScanResponse = {
@@ -2657,8 +2824,10 @@ export type CreateShipShipScanResponse = {
   }
 }
 
+export type CreateShipShipScanError = unknown
+
 export type RefuelShipData = {
-  requestBody?: {
+  body?: {
     /**
      * The amount of fuel to fill in the ship's tanks. When not specified, the ship will be refueled to its maximum fuel capacity. If the amount specified is greater than the ship's remaining capacity, the ship will only be refueled to its maximum fuel capacity. The amount specified is not in market units but in ship fuel units.
      */
@@ -2668,10 +2837,12 @@ export type RefuelShipData = {
      */
     fromCargo?: boolean
   }
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type RefuelShipResponse = {
@@ -2682,18 +2853,22 @@ export type RefuelShipResponse = {
   }
 }
 
+export type RefuelShipError = unknown
+
 export type PurchaseCargoData = {
-  requestBody?: {
+  body?: {
     symbol: TradeSymbol
     /**
      * Amounts of units to purchase.
      */
     units: number
   }
-  /**
-   * The ship's symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship's symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type PurchaseCargoResponse = {
@@ -2704,8 +2879,10 @@ export type PurchaseCargoResponse = {
   }
 }
 
+export type PurchaseCargoError = unknown
+
 export type TransferCargoData = {
-  requestBody?: {
+  body?: {
     tradeSymbol: TradeSymbol
     /**
      * Amount of units to transfer.
@@ -2716,10 +2893,12 @@ export type TransferCargoData = {
      */
     shipSymbol: string
   }
-  /**
-   * The transferring ship's symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The transferring ship's symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type TransferCargoResponse = {
@@ -2728,11 +2907,15 @@ export type TransferCargoResponse = {
   }
 }
 
+export type TransferCargoError = unknown
+
 export type NegotiateContractData = {
-  /**
-   * The ship's symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship's symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type NegotiateContractResponse = {
@@ -2741,25 +2924,33 @@ export type NegotiateContractResponse = {
   }
 }
 
+export type NegotiateContractError = unknown
+
 export type GetMountsData = {
-  /**
-   * The ship's symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship's symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type GetMountsResponse = {
   data: Array<ShipMount>
 }
 
+export type GetMountsError = unknown
+
 export type InstallMountData = {
-  requestBody?: {
+  body?: {
     symbol: string
   }
-  /**
-   * The ship's symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship's symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type InstallMountResponse = {
@@ -2774,17 +2965,21 @@ export type InstallMountResponse = {
   }
 }
 
+export type InstallMountError = unknown
+
 export type RemoveMountData = {
-  requestBody?: {
+  body?: {
     /**
      * The symbol of the mount to remove.
      */
     symbol: string
   }
-  /**
-   * The ship's symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship's symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type RemoveMountResponse = {
@@ -2799,11 +2994,15 @@ export type RemoveMountResponse = {
   }
 }
 
+export type RemoveMountError = unknown
+
 export type GetScrapShipData = {
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type GetScrapShipResponse = {
@@ -2812,11 +3011,15 @@ export type GetScrapShipResponse = {
   }
 }
 
+export type GetScrapShipError = unknown
+
 export type ScrapShipData = {
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type ScrapShipResponse = {
@@ -2826,11 +3029,15 @@ export type ScrapShipResponse = {
   }
 }
 
+export type ScrapShipError = unknown
+
 export type GetRepairShipData = {
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type GetRepairShipResponse = {
@@ -2839,11 +3046,15 @@ export type GetRepairShipResponse = {
   }
 }
 
+export type GetRepairShipError = unknown
+
 export type RepairShipData = {
-  /**
-   * The ship symbol.
-   */
-  shipSymbol: string
+  path: {
+    /**
+     * The ship symbol.
+     */
+    shipSymbol: string
+  }
 }
 
 export type RepairShipResponse = {
@@ -2853,6 +3064,8 @@ export type RepairShipResponse = {
     transaction: RepairTransaction
   }
 }
+
+export type RepairShipError = unknown
 
 export type $OpenApiTs = {
   '/': {
